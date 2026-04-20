@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, serif;
+
+  --color-sandy: #F5DDC4;
+  --color-ocean: #f16f20;
+  --color-forest: #6f2c23;
+  --color-primary: #f16f20;
+  --color-secondary: #6f2c23;
+  --color-charcoal: #333333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-charcoal);
+  background-color: #FAFAFA;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+}
+
+/* Blog Content Styles */
+.blog-content h3 {
+  color: var(--color-charcoal);
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.blog-content p {
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+}
