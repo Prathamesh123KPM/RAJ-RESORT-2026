@@ -1,8 +1,9 @@
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { Calendar, User, ChevronLeft, Share2, Facebook, Twitter, Link as LinkIcon } from 'lucide-react';
-import { blogPosts } from './Blog';
+import { blogPosts } from '../data/blogPosts';
 import { useEffect, useState } from 'react';
+import SEO from '../components/SEO';
 
 export default function BlogPost() {
     const { slug } = useParams();
@@ -18,22 +19,58 @@ export default function BlogPost() {
     }, []);
 
     useEffect(() => {
-        if (post) {
-            document.title = `${post.title} | Raj Resort Blog`;
-            const metaDesc = document.querySelector('meta[name="description"]');
-            if (metaDesc) {
-                metaDesc.setAttribute("content", post.summary);
-            }
-        }
         window.scrollTo(0, 0);
     }, [post]);
 
     if (!post) return null;
 
+    const safeISODate = (dateStr: string) => {
+        try {
+            const d = new Date(dateStr);
+            if (!isNaN(d.getTime())) {
+                return d.toISOString().split('T')[0];
+            }
+        } catch (e) {}
+        return "2026-06-01";
+    };
+
+    const blogPostSchema = {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": post.title,
+        "description": post.summary,
+        "image": post.image,
+        "datePublished": safeISODate(post.date),
+        "author": {
+            "@type": "Person",
+            "name": post.author || "Raj Resort Team"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Raj Resort Kelva Beach",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://rajresortkelva.com/images/logo.png"
+            }
+        },
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://rajresortkelva.com/blog/${post.slug}`
+        }
+    };
+
+
     const otherPosts = blogPosts.filter(p => p.slug !== slug).slice(0, 2);
 
     return (
         <div className="pt-24 pb-20 bg-white">
+            <SEO
+                title={`${post.title} | Raj Resort Blog`}
+                description={post.summary}
+                image={post.image}
+                type="article"
+                schema={blogPostSchema}
+            />
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Breadcrumbs / Back */}
                 <motion.div

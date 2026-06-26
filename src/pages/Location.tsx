@@ -1,18 +1,45 @@
 import { motion } from 'motion/react';
 import { MapPin, Train, Car, Navigation } from 'lucide-react';
 import { useEffect } from 'react';
+import SEO from '../components/SEO';
 
 export default function Location() {
-  useEffect(() => {
-    document.title = "Location & Travel - Raj Resort Kelva Beach";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute("content", "Find your way to Raj Resort at Kelva Beach. View our location map, get directions from Mumbai or Pune, and explore nearby attractions like Kelva Fort.");
+  const resortLocationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Resort",
+    "name": "Raj Resort Kelva Beach",
+    "image": "https://rajresortkelva.com/images/rajresort.webp",
+    "@id": "https://rajresortkelva.com/#resort",
+    "url": "https://rajresortkelva.com",
+    "telephone": "+919890165286",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Bus Stop, Mangelwada, Kelwa",
+      "addressLocality": "Palghar",
+      "addressRegion": "Maharashtra",
+      "postalCode": "401401",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 19.6133,
+      "longitude": 72.7303
+    },
+    "locationString": "Kelva Beach, Palghar, Maharashtra, India",
+    "starRating": {
+      "@type": "Rating",
+      "ratingValue": "4.5",
+      "bestRating": "5"
     }
-  }, []);
+  };
 
   return (
     <div className="pt-24 pb-20 bg-white min-h-screen">
+      <SEO
+        title="Location & Travel - Raj Resort Kelva Beach"
+        description="Find your way to Raj Resort at Kelva Beach. View our location map, get directions from Mumbai or Pune, and explore nearby attractions like Kelva Fort."
+        schema={resortLocationSchema}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.h1
@@ -35,25 +62,53 @@ export default function Location() {
           <h2 className="font-bold text-charcoal mb-4">Nearby Attractions</h2>
           <div className="grid grid-cols-2 gap-4">
             <div className="relative h-70 rounded-lg overflow-hidden group">
-              <img src="https://kelvabeach.in/images/beach-view1.webp" alt="Scenic view of the pristine Kelva Beach coastline and sand" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" referrerPolicy="no-referrer" />
+              <img
+                src="/images/beach-view1.webp"
+                alt="Scenic view of the pristine Kelva Beach coastline and sand"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+                width={400}
+                height={280}
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-3">
                 <span className="text-white text-sm font-medium">Kelva Beach (1 km)</span>
               </div>
             </div>
             <div className="relative h-70 rounded-lg overflow-hidden group">
-              <img src="https://kelvalushgreen.com/wp-content/uploads/2017/01/Kelva-Sea-Fort.jpg" alt="Historic Kelva Sea Fort surrounded by the Arabian Sea during high tide" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" referrerPolicy="no-referrer" />
+              <img
+                src="/images/kelva-sea-fort.jpg"
+                alt="Historic Kelva Sea Fort surrounded by the Arabian Sea during high tide"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+                width={400}
+                height={280}
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-3">
                 <span className="text-white text-sm font-medium">Kelva Fort</span>
               </div>
             </div>
             <div className="relative h-70 rounded-lg overflow-hidden group">
-              <img src="https://kelvalushgreen.com/wp-content/uploads/2017/01/Shitladevi-temple-kelva-beach.jpg" alt="Front facade of the ancient Shri Shitladevi Temple in Kelwa Palghar" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" referrerPolicy="no-referrer" />
+              <img
+                src="/images/shitladevi-temple.jpg"
+                alt="Front facade of the ancient Shri Shitladevi Temple in Kelwa Palghar"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+                width={400}
+                height={280}
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-3">
                 <span className="text-white text-sm font-medium">Shri Shitladevi Temple</span>
               </div>
             </div>
             <div className="relative h-70 rounded-lg overflow-hidden group">
-              <img src="https://kelvabeach.in/sightseeing/kelvadam/kelvadam10.webp" alt="Calm waters of Kelva Dam nestled in lush green hills near Palghar" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" loading="lazy" referrerPolicy="no-referrer" />
+              <img
+                src="/images/kelvadam.webp"
+                alt="Calm waters of Kelva Dam nestled in lush green hills near Palghar"
+                className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                loading="lazy"
+                width={400}
+                height={280}
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-3">
                 <span className="text-white text-sm font-medium">Kelva Dam</span>
               </div>

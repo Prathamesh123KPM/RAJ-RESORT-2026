@@ -1,6 +1,7 @@
 import { CheckCircle2, Users, Maximize, Coffee } from 'lucide-react';
 import { motion } from 'motion/react';
 import { useState, useEffect } from 'react';
+import SEO from '../components/SEO';
 
 export default function Rooms() {
   const [isMobile, setIsMobile] = useState(false);
@@ -11,13 +12,90 @@ export default function Rooms() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  useEffect(() => {
-    document.title = "Rooms & Tariffs - Raj Resort Kelva Beach";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute("content", "Discover comfortable AC rooms at Raj Resort Kelva Beach. From budget-friendly standard rooms to spacious family suites, find the perfect stay for you.");
-    }
-  }, []);
+  const roomsSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "AC Rooms & Accommodation at Raj Resort Kelva Beach",
+    "numberOfItems": 4,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Accommodation",
+          "name": "AC Economic Room",
+          "description": "A budget-friendly option without compromising on comfort. Perfect for solo travelers or couples looking for a cozy beachside stay in Kelva.",
+          "occupancy": {
+            "@type": "QuantitativeValue",
+            "value": 2
+          },
+          "amenityFeature": [
+            { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Attached Bathroom", "value": true }
+          ]
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "Accommodation",
+          "name": "AC Standard Room",
+          "description": "Comfortable and well-appointed rooms featuring essential amenities for a relaxing getaway. Enjoy a peaceful night's sleep after a day at the beach.",
+          "occupancy": {
+            "@type": "QuantitativeValue",
+            "value": 2
+          },
+          "amenityFeature": [
+            { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Attached Bathroom", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "TV with Cable", "value": true }
+          ]
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "Accommodation",
+          "name": "AC Deluxe Room",
+          "description": "Spacious and elegantly furnished, our Deluxe rooms offer upgraded comfort and premium bedding for a truly relaxing experience.",
+          "occupancy": {
+            "@type": "QuantitativeValue",
+            "value": 3
+          },
+          "amenityFeature": [
+            { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Premium Bedding", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Mini Fridge", "value": true }
+          ]
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "Accommodation",
+          "name": "AC Family Room",
+          "description": "Ideal for families or groups, offering ample space and multiple beds. Create lasting memories together in this comfortable setting.",
+          "occupancy": {
+            "@type": "QuantitativeValue",
+            "value": 6
+          },
+          "amenityFeature": [
+            { "@type": "LocationFeatureSpecification", "name": "Air Conditioning", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Free WiFi", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Multiple Beds", "value": true },
+            { "@type": "LocationFeatureSpecification", "name": "Seating Area", "value": true }
+          ]
+        }
+      }
+    ]
+  };
+
 
   const rooms = [
     {
@@ -65,6 +143,11 @@ export default function Rooms() {
 
   return (
     <div className="pt-24 pb-20 bg-gray-50 min-h-screen">
+      <SEO
+        title="Rooms & Tariffs - Raj Resort Kelva Beach"
+        description="Discover comfortable AC rooms at Raj Resort Kelva Beach. From budget-friendly standard rooms to spacious family suites, find the perfect stay for you."
+        schema={roomsSchema}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.h1

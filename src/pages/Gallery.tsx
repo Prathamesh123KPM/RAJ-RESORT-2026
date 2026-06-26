@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function Gallery() {
   const [isMobile, setIsMobile] = useState(false);
@@ -11,13 +12,6 @@ export default function Gallery() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  useEffect(() => {
-    document.title = "Gallery - Raj Resort Kelva Beach";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute("content", "Explore the photo gallery of Raj Resort Kelva Beach. View pictures of our beautiful swimming pool, lush gardens, comfortable AC rooms, and dining areas.");
-    }
-  }, []);
 
   const images = [
     // Resort
@@ -75,6 +69,10 @@ export default function Gallery() {
 
   return (
     <div className="pt-24 pb-20 bg-gray-50 min-h-screen">
+      <SEO
+        title="Gallery - Raj Resort Kelva Beach"
+        description="Explore the photo gallery of Raj Resort Kelva Beach. View pictures of our beautiful swimming pool, lush gardens, comfortable AC rooms, and dining areas."
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <motion.h1

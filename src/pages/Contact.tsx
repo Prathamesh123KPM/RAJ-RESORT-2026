@@ -1,15 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
+import SEO from '../components/SEO';
 
 export default function Contact() {
-  useEffect(() => {
-    document.title = "Contact Us - Raj Resort Kelva Beach";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute("content", "Contact Raj Resort to book your perfect Kelva Beach getaway. Find our phone number, email, and address. Reach out today for reservations and inquiries.");
+  const contactPageSchema = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "name": "Contact Us - Raj Resort Kelva Beach",
+    "description": "Contact Raj Resort to book your perfect Kelva Beach getaway. Find our phone number, email, and address. Reach out today for reservations and inquiries.",
+    "url": "https://rajresortkelva.com/contact",
+    "mainEntity": {
+      "@type": "Resort",
+      "name": "Raj Resort Kelva Beach",
+      "telephone": "+919890165286",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "H.NO-2448, Jasodi, Near Kelva Beach, Kelwa Road",
+        "addressLocality": "Palghar",
+        "addressRegion": "Maharashtra",
+        "postalCode": "401401",
+        "addressCountry": "IN"
+      }
     }
-  }, []);
+  };
+
 
   const [formData, setFormData] = useState({
     name: '',
@@ -54,6 +69,11 @@ export default function Contact() {
 
   return (
     <div className="pt-24 pb-20 bg-gray-50 min-h-screen">
+      <SEO
+        title="Contact Us - Raj Resort Kelva Beach"
+        description="Contact Raj Resort to book your perfect Kelva Beach getaway. Find our phone number, email, and address. Reach out today for reservations and inquiries."
+        schema={contactPageSchema}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.h1

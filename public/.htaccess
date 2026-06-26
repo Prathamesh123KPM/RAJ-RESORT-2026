@@ -8,6 +8,16 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /index.html [L]
 
 # ----------------------------------------------------------------------
+# Security & Best Practice Headers
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set Referrer-Policy "no-referrer-when-downgrade"
+</IfModule>
+
+# ----------------------------------------------------------------------
 # Enable Browser Caching
 # ----------------------------------------------------------------------
 <IfModule mod_expires.c>
@@ -36,6 +46,26 @@ RewriteRule . /index.html [L]
 </IfModule>
 
 # ----------------------------------------------------------------------
+# Force Cache-Control Headers
+# ----------------------------------------------------------------------
+<IfModule mod_headers.c>
+    # Caching for Images, Videos, and Web Fonts (1 year)
+    <FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif|webp|svg|mp4|mpeg|woff2|ttf)$">
+        Header set Cache-Control "max-age=31536000, public"
+    </FilesMatch>
+    
+    # Caching for CSS and JavaScript (1 month)
+    <FilesMatch "\.(css|js)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </FilesMatch>
+    
+    # Force Accept-Encoding negotiation vary
+    <FilesMatch "\.(js|css|xml|gz|html)$">
+        Header append Vary Accept-Encoding
+    </FilesMatch>
+</IfModule>
+
+# ----------------------------------------------------------------------
 # Enable GZIP Compression
 # ----------------------------------------------------------------------
 <IfModule mod_deflate.c>
@@ -48,5 +78,8 @@ RewriteRule . /index.html [L]
     AddOutputFilterByType DEFLATE application/rss+xml
     AddOutputFilterByType DEFLATE application/javascript
     AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
     AddOutputFilterByType DEFLATE image/svg+xml
+    AddOutputFilterByType DEFLATE font/woff2
+    AddOutputFilterByType DEFLATE font/ttf
 </IfModule>

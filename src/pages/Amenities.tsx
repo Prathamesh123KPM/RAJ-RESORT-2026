@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Waves, TreePine, PartyPopper, UtensilsCrossed, Car, Stethoscope, Bus } from 'lucide-react';
 import { useState, useEffect } from 'react';
+import SEO from '../components/SEO';
 
 export default function Amenities() {
   const [isMobile, setIsMobile] = useState(false);
@@ -11,13 +12,51 @@ export default function Amenities() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  useEffect(() => {
-    document.title = "Amenities - Raj Resort Kelva Beach";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute("content", "Enjoy premium resort amenities at Raj Resort Kelva Beach. Relax by our pristine swimming pool, stroll through lush gardens, and savor delicious dining.");
-    }
-  }, []);
+  const amenitiesSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Premium Amenities at Raj Resort Kelva Beach",
+    "numberOfItems": 4,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "LocationFeatureSpecification",
+          "name": "Swimming Pool",
+          "description": "Pristine swimming pool featuring an exciting rain dance setup, perfect for refreshing morning swims or afternoon fun."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "LocationFeatureSpecification",
+          "name": "Garden & Lawn Spaces",
+          "description": "50,000 sq.ft of beautifully manicured lawns and garden spaces. Ideal for serene walks, relaxation, or large outdoor gatherings."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "LocationFeatureSpecification",
+          "name": "Weddings & Events Venue",
+          "description": "Spacious lawns and event hosting setups tailored for coastal destination weddings, family celebrations, and corporate events."
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "LocationFeatureSpecification",
+          "name": "Restaurant & Dining",
+          "description": "In-house restaurant serving authentic local coastal Maharashtrian dishes and diverse multi-cuisine food."
+        }
+      }
+    ]
+  };
+
   const amenities = [
     {
       title: 'Swimming Pool',
@@ -57,6 +96,11 @@ export default function Amenities() {
 
   return (
     <div className="pt-24 pb-20 bg-white min-h-screen">
+      <SEO
+        title="Amenities - Raj Resort Kelva Beach"
+        description="Enjoy premium resort amenities at Raj Resort Kelva Beach. Relax by our pristine swimming pool, stroll through lush gardens, and savor delicious dining."
+        schema={amenitiesSchema}
+      />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <motion.h1

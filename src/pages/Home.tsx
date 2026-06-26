@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Phone, MapPin, Waves, Utensils, Wifi, Car, CheckCircle2, Map as MapIcon, Landmark, Compass, HelpCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import SEO from '../components/SEO';
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -13,13 +14,45 @@ export default function Home() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  useEffect(() => {
-    document.title = "Raj Resort Kelva-Premium Beachside Resort In Kelva";
-    const metaDesc = document.querySelector('meta[name="description"]');
-    if (metaDesc) {
-      metaDesc.setAttribute("content", "Experience paradise at Raj Resort, a premium beachside resort at Kelva Beach. Enjoy comfortable AC rooms, a relaxing pool, and authentic local cuisine.");
-    }
-  }, []);
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What makes Raj Resort the best resort in Kelva Beach?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Raj Resort offers a unique combination of premium AC family and couple suites, a massive swimming pool with a rain dance feature, beautifully landscaped gardens, and an authentic multi-cuisine restaurant, all located within a brief walk to the gorgeous Kelva shoreline."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide secure parking at your resort in Palghar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, we offer complimentary, secure, and spacious on-site parking for all our guests. Whether you are driving down for a weekend trip from Mumbai or Surat, your vehicle will be completely safe."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far is the resort from Mumbai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We are widely considered the ideal beach resort near Mumbai, located roughly 90 to 110 kilometers away depending on your starting point. It's a highly scenic, comfortable 2-to-3 hour drive via the Western Express Highway (NH48)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is the beach within walking distance?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Absolutely! Our resort is situated very close to the beach front. It takes only a few minutes of leisurely walking through the refreshing coastal breeze to step right onto the soft sands of Kelva Beach."
+        }
+      }
+    ]
+  };
+
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -40,6 +73,11 @@ export default function Home() {
 
   return (
     <div className="w-full">
+      <SEO
+        title="Raj Resort Kelva - Premium Beachside Resort In Kelva"
+        description="Experience paradise at Raj Resort, a premium beachside resort at Kelva Beach. Enjoy comfortable AC rooms, a relaxing pool, and authentic local cuisine."
+        schema={faqSchema}
+      />
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         {/* Background Image Slider */}

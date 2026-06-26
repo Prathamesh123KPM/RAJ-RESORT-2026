@@ -3,6 +3,7 @@ import path from 'path';
 import puppeteer from 'puppeteer';
 import express from 'express';
 import { fileURLToPath } from 'url';
+import { blogPosts } from './src/data/blogPosts.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -15,15 +16,56 @@ const routes = [
     '/location',
     '/contact',
     '/blog',
-    '/blog/top-5-things-to-do-at-kelva-beach',
-    '/blog/why-raj-resort-is-the-best-beachfront-getaway',
-    '/blog/guide-to-local-cuisine-at-kelva-beach',
-    '/blog/best-resort-in-kelva-for-family',
-    '/blog/wedding-resorts-in-palghar',
-    '/blog/1-day-picnic-resort-in-kelva'
+    ...blogPosts.map(post => `/blog/${post.slug}`)
 ];
 
 const PORT = 54321;
+
+function generateSitemap(routesList) {
+    console.log('Generating sitemap.xml...');
+    const domain = 'https://rajresortkelva.com';
+    const today = new Date().toISOString().split('T')[0];
+
+    let xml = `<?xml version="1.0" encoding="UTF-8"?>\n`;
+    xml += `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
+
+    for (const route of routesList) {
+        const url = `${domain}${route === '/' ? '' : route}`;
+        let priority = '0.7';
+        let changefreq = 'weekly';
+
+        if (route === '/') {
+            priority = '1.0';
+            changefreq = 'daily';
+        } else if (['/rooms', '/amenities', '/location', '/contact', '/blog'].includes(route)) {
+            priority = '0.9';
+            changefreq = 'weekly';
+        }
+
+        xml += `  <url>\n`;
+        xml += `    <loc>${url}</loc>\n`;
+        xml += `    <lastmod>${today}</lastmod>\n`;
+        xml += `    <changefreq>${changefreq}</changefreq>\n`;
+        xml += `    <priority>${priority}</priority>\n`;
+        xml += `  </url>\n`;
+    }
+
+    xml += `</urlset>\n`;
+
+    // Write to public/
+    const publicPath = path.resolve(__dirname, 'public');
+    if (fs.existsSync(publicPath)) {
+        fs.writeFileSync(path.join(publicPath, 'sitemap.xml'), xml);
+        console.log('Successfully wrote sitemap.xml to public/');
+    }
+
+    // Write to dist/
+    const distPath = path.resolve(__dirname, 'dist');
+    if (fs.existsSync(distPath)) {
+        fs.writeFileSync(path.join(distPath, 'sitemap.xml'), xml);
+        console.log('Successfully wrote sitemap.xml to dist/');
+    }
+}
 
 async function prerender() {
     console.log('Starting prerender sequence...');
@@ -35,10 +77,13 @@ async function prerender() {
         process.exit(1);
     }
 
+    // Keep a pristine original index.html in memory so static hosts and routes can use it
+    const originalIndex = fs.readFileSync(path.join(distPath, 'index.html'), 'utf8');
+
     app.use(express.static(distPath));
 
     app.use((req, res) => {
-        res.sendFile(path.resolve(distPath, 'index.html'));
+        res.send(originalIndex);
     });
 
     const server = app.listen(PORT, async () => {
@@ -47,12 +92,19 @@ async function prerender() {
         try {
             const browser = await puppeteer.launch({ headless: "new" });
 
-            // Keep a pristine original index.html so static hosts can use it as a 404 SPA fallback
-            const originalIndex = fs.readFileSync(path.join(distPath, 'index.html'), 'utf8');
-
             for (const route of routes) {
                 console.log(`Prerendering ${route}...`);
                 const page = await browser.newPage();
+
+                page.on('pageerror', err => {
+                    console.error(`[RUNTIME ERROR] ${route}:`, err.message);
+                });
+
+                page.on('console', msg => {
+                    if (msg.type() === 'error') {
+                        console.error(`[CONSOLE ERROR] ${route}:`, msg.text());
+                    }
+                });
 
                 await page.goto(`http://localhost:${PORT}${route}`, { waitUntil: 'networkidle0' });
 
@@ -62,11 +114,14 @@ async function prerender() {
                 const html = await page.content();
                 await page.close();
 
+                // Strip inline styles injected by Framer Motion to optimize SEO crawler indexing and clean up HTML files
+                const cleanHtml = html.replace(/ style="[^"]*"/g, '');
+
                 const isRoot = route === '/';
                 const dumpPath = isRoot ? path.join(distPath, 'index.html') : path.join(distPath, route, 'index.html');
 
                 fs.mkdirSync(path.dirname(dumpPath), { recursive: true });
-                fs.writeFileSync(dumpPath, html);
+                fs.writeFileSync(dumpPath, cleanHtml);
             }
 
             fs.writeFileSync(path.join(distPath, '404.html'), originalIndex);
@@ -74,6 +129,10 @@ async function prerender() {
             console.log('Prerendering completed successfully!');
             await browser.close();
             server.close();
+
+            // Generate sitemap dynamically
+            generateSitemap(routes);
+
             process.exit(0);
         } catch (e) {
             console.error('Error during prerender:', e);
