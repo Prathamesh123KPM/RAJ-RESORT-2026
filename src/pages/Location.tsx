@@ -6,31 +6,52 @@ import SEO from '../components/SEO';
 export default function Location() {
   const resortLocationSchema = {
     "@context": "https://schema.org",
-    "@type": "Resort",
-    "name": "Raj Resort Kelva Beach",
-    "image": "https://rajresortkelva.com/images/rajresort.webp",
-    "@id": "https://rajresortkelva.com/#resort",
-    "url": "https://rajresortkelva.com",
-    "telephone": "+919890165286",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Bus Stop, Mangelwada, Kelwa",
-      "addressLocality": "Palghar",
-      "addressRegion": "Maharashtra",
-      "postalCode": "401401",
-      "addressCountry": "IN"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 19.6133,
-      "longitude": 72.7303
-    },
-    "locationString": "Kelva Beach, Palghar, Maharashtra, India",
-    "starRating": {
-      "@type": "Rating",
-      "ratingValue": "4.5",
-      "bestRating": "5"
-    }
+    "@graph": [
+      {
+        "@type": "Resort",
+        "name": "Raj Resort Kelva Beach",
+        "image": "https://rajresortkelva.com/images/rajresort.webp",
+        "@id": "https://rajresortkelva.com/#resort",
+        "url": "https://rajresortkelva.com",
+        "telephone": "+919890165286",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bus Stop, Mangelwada, Kelwa",
+          "addressLocality": "Palghar",
+          "addressRegion": "Maharashtra",
+          "postalCode": "401401",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 19.6133,
+          "longitude": 72.7303
+        },
+        "locationString": "Kelva Beach, Palghar, Maharashtra, India",
+        "starRating": {
+          "@type": "Rating",
+          "ratingValue": "4.5",
+          "bestRating": "5"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://rajresortkelva.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Location & Travel",
+            "item": "https://rajresortkelva.com/location"
+          }
+        ]
+      }
+    ]
   };
 
   return (
@@ -38,6 +59,7 @@ export default function Location() {
       <SEO
         title="Location & Travel - Raj Resort Kelva Beach"
         description="Find your way to Raj Resort at Kelva Beach. View our location map, get directions from Mumbai or Pune, and explore nearby attractions like Kelva Fort."
+        keywords="how to reach kelva beach, directions to raj resort kelva, mumbai to kelva beach distance, thane to kelva beach train route, kelwa road station to beach, places near kelva beach"
         schema={resortLocationSchema}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -67,6 +89,7 @@ export default function Location() {
                 alt="Scenic view of the pristine Kelva Beach coastline and sand"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 loading="lazy"
+                decoding="async"
                 width={400}
                 height={280}
               />
@@ -80,6 +103,7 @@ export default function Location() {
                 alt="Historic Kelva Sea Fort surrounded by the Arabian Sea during high tide"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 loading="lazy"
+                decoding="async"
                 width={400}
                 height={280}
               />
@@ -93,6 +117,7 @@ export default function Location() {
                 alt="Front facade of the ancient Shri Shitladevi Temple in Kelwa Palghar"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 loading="lazy"
+                decoding="async"
                 width={400}
                 height={280}
               />
@@ -106,6 +131,7 @@ export default function Location() {
                 alt="Calm waters of Kelva Dam nestled in lush green hills near Palghar"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 loading="lazy"
+                decoding="async"
                 width={400}
                 height={280}
               />

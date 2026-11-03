@@ -6,23 +6,44 @@ import SEO from '../components/SEO';
 export default function Contact() {
   const contactPageSchema = {
     "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "name": "Contact Us - Raj Resort Kelva Beach",
-    "description": "Contact Raj Resort to book your perfect Kelva Beach getaway. Find our phone number, email, and address. Reach out today for reservations and inquiries.",
-    "url": "https://rajresortkelva.com/contact",
-    "mainEntity": {
-      "@type": "Resort",
-      "name": "Raj Resort Kelva Beach",
-      "telephone": "+919890165286",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "H.NO-2448, Jasodi, Near Kelva Beach, Kelwa Road",
-        "addressLocality": "Palghar",
-        "addressRegion": "Maharashtra",
-        "postalCode": "401401",
-        "addressCountry": "IN"
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        "name": "Contact Us - Raj Resort Kelva Beach",
+        "description": "Contact Raj Resort to book your perfect Kelva Beach getaway. Find our phone number, email, and address. Reach out today for reservations and inquiries.",
+        "url": "https://rajresortkelva.com/contact",
+        "mainEntity": {
+          "@type": "Resort",
+          "name": "Raj Resort Kelva Beach",
+          "telephone": "+919890165286",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "H.NO-2448, Jasodi, Near Kelva Beach, Kelwa Road",
+            "addressLocality": "Palghar",
+            "addressRegion": "Maharashtra",
+            "postalCode": "401401",
+            "addressCountry": "IN"
+          }
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://rajresortkelva.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Contact Us",
+            "item": "https://rajresortkelva.com/contact"
+          }
+        ]
       }
-    }
+    ]
   };
 
 
@@ -72,6 +93,7 @@ export default function Contact() {
       <SEO
         title="Contact Us - Raj Resort Kelva Beach"
         description="Contact Raj Resort to book your perfect Kelva Beach getaway. Find our phone number, email, and address. Reach out today for reservations and inquiries."
+        keywords="raj resort contact number, kelva beach resort booking phone, raj resort phone number, resort manager contact kelva, kelva resort address directions"
         schema={contactPageSchema}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

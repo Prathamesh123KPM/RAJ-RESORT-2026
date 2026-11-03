@@ -39,7 +39,7 @@ export default function SEO({
     // 2. Standard Meta Tags
     setMetaTag('name', 'description', description);
     
-    const defaultKeywords = 'raj resort, raj resort kelva, kelva beach resort, best resort in kelva, resort in palghar, beach resort near mumbai, 1 day picnic resort in kelva, hotels in kelva, beach resort palghar';
+    const defaultKeywords = 'raj resort, raj resort kelva, kelva beach resort, best resort in kelva, resort in palghar, beach resort near mumbai, 1 day picnic resort in kelva, kelva beach resort with swimming pool, rain dance resort kelva, palghar resort for family, weekend getaway near mumbai, hotels in kelva beach';
     setMetaTag('name', 'keywords', keywords || defaultKeywords);
     setMetaTag('name', 'robots', 'index, follow');
 

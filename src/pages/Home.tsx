@@ -14,45 +14,99 @@ export default function Home() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const faqSchema = {
+  const homeSchema = {
     "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    "@graph": [
       {
-        "@type": "Question",
-        "name": "What makes Raj Resort the best resort in Kelva Beach?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Raj Resort offers a unique combination of premium AC family and couple suites, a massive swimming pool with a rain dance feature, beautifully landscaped gardens, and an authentic multi-cuisine restaurant, all located within a brief walk to the gorgeous Kelva shoreline."
+        "@type": "Resort",
+        "@id": "https://rajresortkelva.com/#resort",
+        "name": "Raj Resort Kelva Beach",
+        "image": "https://rajresortkelva.com/images/rajresort.webp",
+        "url": "https://rajresortkelva.com",
+        "telephone": "+919890165286",
+        "priceRange": "₹650 - ₹10,000",
+        "currenciesAccepted": "INR",
+        "paymentAccepted": "Cash, UPI, Credit Card, Net Banking",
+        "checkinTime": "12:00",
+        "checkoutTime": "10:00",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "H.NO-2448, Jasodi, Near Kelva Beach, Kelwa Road",
+          "addressLocality": "Palghar",
+          "addressRegion": "Maharashtra",
+          "postalCode": "401401",
+          "addressCountry": "IN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 19.6200397,
+          "longitude": 72.7324351
+        },
+        "amenityFeature": [
+          { "@type": "LocationFeatureSpecification", "name": "Swimming Pool", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Rain Dance Arena", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Water Slides", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "AC Deluxe Rooms", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Free On-Site Parking", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "Multi-Cuisine Restaurant", "value": true },
+          { "@type": "LocationFeatureSpecification", "name": "50,000 sq ft Garden Lawns", "value": true }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/share/1Sgqh92po4/?mibextid=wwXIfr",
+          "https://www.instagram.com/raj_resort_kelve_beach_?igsh=MXNobjYxeWdzbTBxdg==",
+          "https://www.google.com/maps/place/Raj+Resort+Kelve+Beach/@19.6200397,72.7324351,17z/"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://rajresortkelva.com/#website",
+        "url": "https://rajresortkelva.com",
+        "name": "Raj Resort Kelva Beach",
+        "description": "Premium beachside resort at Kelva Beach, Palghar with swimming pool, rain dance, AC rooms, and authentic coastal food.",
+        "publisher": {
+          "@id": "https://rajresortkelva.com/#resort"
         }
       },
       {
-        "@type": "Question",
-        "name": "Do you provide secure parking at your resort in Palghar?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, we offer complimentary, secure, and spacious on-site parking for all our guests. Whether you are driving down for a weekend trip from Mumbai or Surat, your vehicle will be completely safe."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How far is the resort from Mumbai?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We are widely considered the ideal beach resort near Mumbai, located roughly 90 to 110 kilometers away depending on your starting point. It's a highly scenic, comfortable 2-to-3 hour drive via the Western Express Highway (NH48)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is the beach within walking distance?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Absolutely! Our resort is situated very close to the beach front. It takes only a few minutes of leisurely walking through the refreshing coastal breeze to step right onto the soft sands of Kelva Beach."
-        }
+        "@type": "FAQPage",
+        "@id": "https://rajresortkelva.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What makes Raj Resort the best resort in Kelva Beach?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Raj Resort offers a unique combination of premium AC family and couple suites, a massive swimming pool with a rain dance feature, beautifully landscaped gardens, and an authentic multi-cuisine restaurant, all located within a brief walk to the gorgeous Kelva shoreline."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide secure parking at your resort in Palghar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we offer complimentary, secure, and spacious on-site parking for all our guests. Whether you are driving down for a weekend trip from Mumbai or Surat, your vehicle will be completely safe."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How far is the resort from Mumbai?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We are widely considered the ideal beach resort near Mumbai, located roughly 90 to 110 kilometers away depending on your starting point. It's a highly scenic, comfortable 2-to-3 hour drive via the Western Express Highway (NH48)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the beach within walking distance?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely! Our resort is situated very close to the beach front. It takes only a few minutes of leisurely walking through the refreshing coastal breeze to step right onto the soft sands of Kelva Beach."
+            }
+          }
+        ]
       }
     ]
   };
-
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -76,7 +130,8 @@ export default function Home() {
       <SEO
         title="Raj Resort Kelva - Premium Beachside Resort In Kelva"
         description="Experience paradise at Raj Resort, a premium beachside resort at Kelva Beach. Enjoy comfortable AC rooms, a relaxing pool, and authentic local cuisine."
-        schema={faqSchema}
+        keywords="raj resort, raj resort kelva, best resort in kelva beach, resort in palghar, beach resort near mumbai, 1 day picnic resort in kelva, kelva beach resort with swimming pool, rain dance resort kelva, palghar resort for family, weekend getaway near mumbai, hotels in kelva beach"
+        schema={homeSchema}
       />
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
@@ -213,14 +268,18 @@ export default function Home() {
               transition={{ duration: 0.6 }}
               className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl"
             >
-              <img
-                src={isMobile ? "/images/mobile/pool2.jpg" : "/images/pool2.webp"}
-                alt="Beautiful swimming pool at Raj Resort in Kelva Beach, Palghar"
-                className="w-full h-full object-cover"
-                loading="lazy"
-                width={800}
-                height={500}
-              />
+              <picture className="w-full h-full block">
+                <source media="(max-width: 767px)" srcSet="/images/mobile/pool2.jpg" />
+                <img
+                  src="/images/pool2.webp"
+                  alt="Beautiful swimming pool at Raj Resort in Kelva Beach, Palghar"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
+                  width={800}
+                  height={500}
+                />
+              </picture>
               <div className="absolute bottom-6 left-6 right-6 bg-white/90 backdrop-blur-sm p-6 rounded-xl shadow-lg">
                 <div className="flex items-center gap-4">
                   <div className="bg-forest/10 p-3 rounded-full text-forest">
@@ -254,29 +313,36 @@ export default function Home() {
             {/* Room 1 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group">
               <div className="relative h-64 overflow-hidden">
-                <img
-                  src={isMobile ? "/images/mobile/rooms/ac-deluxe.jpg" : "/images/rooms/ac-deluxe.webp"}
-                  alt="Spacious AC Deluxe Room featuring premium bedding and modern amenities for couples at Raj Resort Kelva"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
-                  loading="lazy"
-                  width={400}
-                  height={256}
-                />
+                <picture className="w-full h-full block">
+                  <source media="(max-width: 767px)" srcSet="/images/mobile/rooms/ac-deluxe.jpg" />
+                  <img
+                    src="/images/rooms/ac-deluxe.webp"
+                    alt="Spacious AC Deluxe Room featuring premium bedding and modern amenities for couples at Raj Resort Kelva"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    decoding="async"
+                    width={400}
+                    height={256}
+                  />
+                </picture>
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-sm font-bold text-ocean">
                   Popular
                 </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-2">AC Deluxe Room</h3>
-                <p className="text-gray-500 text-sm mb-4 line-clamp-2">Spacious and elegantly furnished room perfect for couples seeking extra comfort.</p>
+                <div className="flex items-baseline justify-between mb-2">
+                  <h3 className="text-xl font-serif font-bold text-charcoal">AC Deluxe Room</h3>
+                  <span className="text-lg font-bold text-ocean">₹4,200<span className="text-xs font-normal text-gray-500">/day</span></span>
+                </div>
+                <p className="text-xs text-forest font-semibold mb-2">For 2 Persons • Complimentary Breakfast</p>
+                <p className="text-gray-500 text-sm mb-4 line-clamp-2">Spacious and elegantly furnished room with premium bedding, mini fridge, and attached bath.</p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm text-gray-600 gap-2"><CheckCircle2 size={16} className="text-forest" /> Air Conditioning</li>
-                  <li className="flex items-center text-sm text-gray-600 gap-2"><CheckCircle2 size={16} className="text-forest" /> Free WiFi</li>
-                  <li className="flex items-center text-sm text-gray-600 gap-2"><CheckCircle2 size={16} className="text-forest" /> Daily Housekeeping</li>
+                  <li className="flex items-center text-sm text-gray-600 gap-2"><CheckCircle2 size={16} className="text-forest" /> Free WiFi & Cable TV</li>
+                  <li className="flex items-center text-sm text-gray-600 gap-2"><CheckCircle2 size={16} className="text-forest" /> Extra Person: ₹1,000 | Child: ₹800</li>
                 </ul>
                 <Link to="/rooms" className="block w-full text-center py-3 border border-ocean text-ocean rounded-lg font-medium hover:bg-ocean hover:text-white transition-colors">
-                  View Details
+                  View Tariffs & Details
                 </Link>
               </div>
             </div>
@@ -284,26 +350,36 @@ export default function Home() {
             {/* Room 2 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group">
               <div className="relative h-64 overflow-hidden">
-                <img
-                  src={isMobile ? "/images/mobile/rooms/family-room.jpg" : "/images/rooms/family-room.webp"}
-                  alt="Large AC Family Room with multiple beds, perfect for group stays at Raj Resort Palghar"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
-                  loading="lazy"
-                  width={400}
-                  height={256}
-                />
+                <picture className="w-full h-full block">
+                  <source media="(max-width: 767px)" srcSet="/images/mobile/rooms/family-room.jpg" />
+                  <img
+                    src="/images/rooms/family-room.webp"
+                    alt="Large AC Big Family Room with multiple beds, perfect for group stays at Raj Resort Palghar"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    decoding="async"
+                    width={400}
+                    height={256}
+                  />
+                </picture>
+                <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-forest">
+                  Group Special
+                </div>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-2">AC Family Room</h3>
-                <p className="text-gray-500 text-sm mb-4 line-clamp-2">Ideal for families or groups, offering ample space and multiple beds for a comfortable stay.</p>
+                <div className="flex items-baseline justify-between mb-2">
+                  <h3 className="text-xl font-serif font-bold text-charcoal">AC Big Family Room</h3>
+                  <span className="text-lg font-bold text-ocean">₹10,000<span className="text-xs font-normal text-gray-500">/day</span></span>
+                </div>
+                <p className="text-xs text-forest font-semibold mb-2">For Min. 8 Persons • Complimentary Breakfast</p>
+                <p className="text-gray-500 text-sm mb-4 line-clamp-2">Ideal for large families or groups, offering multiple beds and generous space for a memorable stay.</p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm text-gray-600 gap-2"><CheckCircle2 size={16} className="text-forest" /> Air Conditioning</li>
-                  <li className="flex items-center text-sm text-gray-600 gap-2"><CheckCircle2 size={16} className="text-forest" /> Free Breakfast Options</li>
-                  <li className="flex items-center text-sm text-gray-600 gap-2"><CheckCircle2 size={16} className="text-forest" /> Extra Space</li>
+                  <li className="flex items-center text-sm text-gray-600 gap-2"><CheckCircle2 size={16} className="text-forest" /> Free Morning Breakfast Included</li>
+                  <li className="flex items-center text-sm text-gray-600 gap-2"><CheckCircle2 size={16} className="text-forest" /> Multiple Beds & Seating Area</li>
                 </ul>
                 <Link to="/rooms" className="block w-full text-center py-3 border border-ocean text-ocean rounded-lg font-medium hover:bg-ocean hover:text-white transition-colors">
-                  View Details
+                  View Tariffs & Details
                 </Link>
               </div>
             </div>
@@ -311,26 +387,33 @@ export default function Home() {
             {/* Room 3 */}
             <div className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow group md:hidden lg:block">
               <div className="relative h-64 overflow-hidden">
-                <img
-                  src={isMobile ? "/images/mobile/rooms/super-deluxe.jpg" : "/images/rooms/super-deluxe.webp"}
-                  alt="Cozy AC Standard Room offering comfortable beachside accommodation in Kelva"
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  referrerPolicy="no-referrer"
-                  loading="lazy"
-                  width={400}
-                  height={256}
-                />
+                <picture className="w-full h-full block">
+                  <source media="(max-width: 767px)" srcSet="/images/mobile/rooms/super-deluxe.jpg" />
+                  <img
+                    src="/images/rooms/super-deluxe.webp"
+                    alt="Cozy AC Standard Room offering comfortable beachside accommodation in Kelva"
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                    decoding="async"
+                    width={400}
+                    height={256}
+                  />
+                </picture>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-serif font-bold text-charcoal mb-2">AC Standard Room</h3>
-                <p className="text-gray-500 text-sm mb-4 line-clamp-2">Cozy and comfortable accommodation with all essential amenities for a relaxing getaway.</p>
+                <div className="flex items-baseline justify-between mb-2">
+                  <h3 className="text-xl font-serif font-bold text-charcoal">AC Standard Room</h3>
+                  <span className="text-lg font-bold text-ocean">₹3,500<span className="text-xs font-normal text-gray-500">/day</span></span>
+                </div>
+                <p className="text-xs text-forest font-semibold mb-2">For 2 Persons • Complimentary Breakfast</p>
+                <p className="text-gray-500 text-sm mb-4 line-clamp-2">Cozy and comfortable accommodation with TV, attached bath, and all essential amenities.</p>
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center text-sm text-gray-600 gap-2"><CheckCircle2 size={16} className="text-forest" /> Air Conditioning</li>
-                  <li className="flex items-center text-sm text-gray-600 gap-2"><CheckCircle2 size={16} className="text-forest" /> Free WiFi</li>
-                  <li className="flex items-center text-sm text-gray-600 gap-2"><CheckCircle2 size={16} className="text-forest" /> Attached Bathroom</li>
+                  <li className="flex items-center text-sm text-gray-600 gap-2"><CheckCircle2 size={16} className="text-forest" /> Free WiFi & Cable TV</li>
+                  <li className="flex items-center text-sm text-gray-600 gap-2"><CheckCircle2 size={16} className="text-forest" /> Extra Person: ₹1,000 | Child: ₹800</li>
                 </ul>
                 <Link to="/rooms" className="block w-full text-center py-3 border border-ocean text-ocean rounded-lg font-medium hover:bg-ocean hover:text-white transition-colors">
-                  View Details
+                  View Tariffs & Details
                 </Link>
               </div>
             </div>
@@ -401,19 +484,34 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             <div className="col-span-2 row-span-2 rounded-2xl overflow-hidden shadow-md group aspect-square md:aspect-auto">
-              <img src={isMobile ? "/images/mobile/raj.jpg" : "/images/raj.webp"} alt="Exterior view of Raj Resort buildings surrounded by lush palm trees in Kelva" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" width={800} height={800} />
+              <picture className="w-full h-full block">
+                <source media="(max-width: 767px)" srcSet="/images/mobile/raj.jpg" />
+                <img src="/images/raj.webp" alt="Exterior view of Raj Resort buildings surrounded by lush palm trees in Kelva" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" width={800} height={800} />
+              </picture>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-md group aspect-square">
-              <img src={isMobile ? "/images/mobile/pool.jpg" : "/images/pool.webp"} alt="Clear blue swimming pool at Raj Resort Palghar during daytime" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" width={400} height={400} />
+              <picture className="w-full h-full block">
+                <source media="(max-width: 767px)" srcSet="/images/mobile/pool.jpg" />
+                <img src="/images/pool.webp" alt="Clear blue swimming pool at Raj Resort Palghar during daytime" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" width={400} height={400} />
+              </picture>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-md group aspect-square">
-              <img src={isMobile ? "/images/mobile/rooms/super-deluxe.jpg" : "/images/rooms/super-deluxe.webp"} alt="Interior view of an AC Standard Room at Raj Resort" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" width={400} height={400} />
+              <picture className="w-full h-full block">
+                <source media="(max-width: 767px)" srcSet="/images/mobile/rooms/super-deluxe.jpg" />
+                <img src="/images/rooms/super-deluxe.webp" alt="Interior view of an AC Standard Room at Raj Resort" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" width={400} height={400} />
+              </picture>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-md group aspect-square">
-              <img src={isMobile ? "/images/mobile/build2.jpg" : "/images/build2.webp"} alt="Main entrance and reception area of Raj Resort Kelva Beach" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" width={400} height={400} />
+              <picture className="w-full h-full block">
+                <source media="(max-width: 767px)" srcSet="/images/mobile/build2.jpg" />
+                <img src="/images/build2.webp" alt="Main entrance and reception area of Raj Resort Kelva Beach" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" width={400} height={400} />
+              </picture>
             </div>
             <div className="rounded-2xl overflow-hidden shadow-md group aspect-square">
-              <img src={isMobile ? "/images/mobile/rooms/family-room.jpg" : "/images/rooms/family-room.webp"} alt="Spacious interior of a family room at Raj Resort" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" width={400} height={400} />
+              <picture className="w-full h-full block">
+                <source media="(max-width: 767px)" srcSet="/images/mobile/rooms/family-room.jpg" />
+                <img src="/images/rooms/family-room.webp" alt="Spacious interior of a family room at Raj Resort" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" decoding="async" width={400} height={400} />
+              </picture>
             </div>
           </div>
 
@@ -504,7 +602,10 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2">
-              <img src={isMobile ? "/images/mobile/lawnn.jpg" : "/images/lawnn.webp"} alt="Beautiful landscape of Kelva Beach surroundings" className="rounded-2xl shadow-xl w-full h-[400px] object-cover" loading="lazy" width={800} height={400} />
+              <picture className="w-full h-[400px] block">
+                <source media="(max-width: 767px)" srcSet="/images/mobile/lawnn.jpg" />
+                <img src="/images/lawnn.webp" alt="Beautiful landscape of Kelva Beach surroundings" className="rounded-2xl shadow-xl w-full h-[400px] object-cover" loading="lazy" decoding="async" width={800} height={400} />
+              </picture>
             </div>
             <div className="lg:w-1/2 flex flex-col justify-center">
               <div className="text-sm font-bold tracking-widest text-forest uppercase mb-3">The Destination</div>
@@ -611,7 +712,10 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-charcoal relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src={isMobile ? "/images/mobile/pool.jpg" : "/images/pool.webp"} alt="Beautiful orange sunset over the Arabian sea at Kelva beach" className="w-full h-full object-cover" loading="lazy" width={1920} height={1080} />
+          <picture className="w-full h-full block">
+            <source media="(max-width: 767px)" srcSet="/images/mobile/pool.jpg" />
+            <img src="/images/pool.webp" alt="Beautiful orange sunset over the Arabian sea at Kelva beach" className="w-full h-full object-cover" loading="lazy" decoding="async" width={1920} height={1080} />
+          </picture>
         </div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-5xl font-serif font-bold text-white mb-6">Ready for your beachside stay in Kelva?</h2>

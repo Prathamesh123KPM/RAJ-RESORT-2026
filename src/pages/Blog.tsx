@@ -26,34 +26,55 @@ export default function Blog() {
 
     const blogSchema = {
         "@context": "https://schema.org",
-        "@type": "Blog",
-        "name": "Raj Resort Kelva Beach Blog",
-        "description": "Read the latest travel tips, local guides, and resort updates from Raj Resort Kelva Beach.",
-        "url": "https://rajresortkelva.com/blog",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Raj Resort Kelva Beach",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://rajresortkelva.com/images/logo.png"
+        "@graph": [
+            {
+                "@type": "Blog",
+                "name": "Raj Resort Kelva Beach Blog",
+                "description": "Read the latest travel tips, local guides, and resort updates from Raj Resort Kelva Beach.",
+                "url": "https://rajresortkelva.com/blog",
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "Raj Resort Kelva Beach",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://rajresortkelva.com/images/rajresort.webp"
+                    }
+                },
+                "blogPost": blogPosts.map(post => ({
+                    "@type": "BlogPosting",
+                    "headline": post.title,
+                    "description": post.summary,
+                    "datePublished": safeISODate(post.date),
+                    "url": `https://rajresortkelva.com/blog/${post.slug}`,
+                    "image": post.image
+                }))
+            },
+            {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Home",
+                        "item": "https://rajresortkelva.com"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Blog",
+                        "item": "https://rajresortkelva.com/blog"
+                    }
+                ]
             }
-        },
-        "blogPost": blogPosts.map(post => ({
-            "@type": "BlogPosting",
-            "headline": post.title,
-            "description": post.summary,
-            "datePublished": safeISODate(post.date),
-            "url": `https://rajresortkelva.com/blog/${post.slug}`,
-            "image": post.image
-        }))
+        ]
     };
-
 
     return (
         <div className="pt-24 pb-20 bg-gray-50">
             <SEO
                 title="Blog | Raj Resort Kelva Beach - Tips & Local Guide"
                 description="Read the latest travel tips, local guides, and resort updates from Raj Resort Kelva Beach."
+                keywords="raj resort blog, kelva beach travel guide, palghar tourism, things to do in kelva beach, kelva beach resort packages, weekend getaways near mumbai"
                 schema={blogSchema}
             />
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -78,19 +99,21 @@ export default function Blog() {
 
                 {/* Blog Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {blogPosts.map((post, index) => (
+                    {[...blogPosts].reverse().map((post, index) => (
                         <motion.div
                             key={post.id}
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: index * 0.1 }}
+                            transition={{ delay: (index % 6) * 0.08 }}
                             className="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-shadow flex flex-col h-full group"
                         >
                             <Link to={`/blog/${post.slug}`} className="relative h-60 overflow-hidden">
                                 <img
-                                    src={`${post.image}&w=${isMobile ? 800 : 2070}`}
+                                    src={post.image.startsWith('http') ? (post.image.includes('?') ? `${post.image}&w=600&auto=format&fit=crop` : `${post.image}?w=600&auto=format&fit=crop`) : post.image}
                                     alt={`Featured image for article: ${post.title}`}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    loading={index < 3 ? "eager" : "lazy"}
+                                    decoding="async"
                                     width={400}
                                     height={240}
                                 />

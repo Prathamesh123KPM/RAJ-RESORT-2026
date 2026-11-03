@@ -25,7 +25,7 @@ export default function Gallery() {
     { src: '/images/pool5.webp', mobileSrc: '/images/mobile/pool5.jpg', category: 'Pool', alt: 'Swimming pool area surrounded by lush nature in Kelva' },
     // Rooms
     { src: '/images/rooms/ac-deluxe.webp', mobileSrc: '/images/mobile/rooms/ac-deluxe.jpg', category: 'Rooms', alt: 'Comfortable AC Deluxe Room with premium amenities at Raj Resort' },
-    { src: '/images/rooms/family-room.webp', mobileSrc: '/images/mobile/rooms/family-room.jpg', category: 'Rooms', alt: 'Spacious AC Family Room with multiple beds for group stays' },
+    { src: '/images/rooms/family-room.webp', mobileSrc: '/images/mobile/rooms/family-room.jpg', category: 'Rooms', alt: 'Spacious AC Big Family Room with multiple beds for group stays' },
     { src: '/images/rooms/super-deluxe.webp', mobileSrc: '/images/mobile/rooms/super-deluxe.jpg', category: 'Rooms', alt: 'Cozy AC Standard Room for a relaxing beachside stay in Kelva' },
     { src: '/images/room.webp', mobileSrc: '/images/mobile/room.jpg', category: 'Rooms', alt: 'Interior view of a premium resort room perfect for couples' },
     { src: '/images/room3.webp', mobileSrc: '/images/mobile/room3.jpg', category: 'Rooms', alt: 'Well-lit and comfortable AC accommodation at Raj Resort' },
@@ -67,11 +67,42 @@ export default function Gallery() {
     }
   };
 
+  const gallerySchema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ImageGallery",
+        "name": "Raj Resort Kelva Beach Photo Gallery",
+        "description": "Explore the photo gallery of Raj Resort Kelva Beach. View pictures of our beautiful swimming pool, lush gardens, comfortable AC rooms, and dining areas.",
+        "url": "https://rajresortkelva.com/gallery"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://rajresortkelva.com"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Photo Gallery",
+            "item": "https://rajresortkelva.com/gallery"
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <div className="pt-24 pb-20 bg-gray-50 min-h-screen">
       <SEO
         title="Gallery - Raj Resort Kelva Beach"
         description="Explore the photo gallery of Raj Resort Kelva Beach. View pictures of our beautiful swimming pool, lush gardens, comfortable AC rooms, and dining areas."
+        keywords="raj resort photos, kelva beach resort pictures, swimming pool photos raj resort, kelva resort room photos, kelva beach photo gallery"
+        schema={gallerySchema}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
@@ -125,15 +156,18 @@ export default function Gallery() {
                 className="relative aspect-[4/3] rounded-xl overflow-hidden cursor-pointer group shadow-sm hover:shadow-xl"
                 onClick={() => openLightbox(index)}
               >
-                <img
-                  src={isMobile ? image.mobileSrc : image.src}
-                  alt={image.alt}
-                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  referrerPolicy="no-referrer"
-                  loading="lazy"
-                  width={400}
-                  height={300}
-                />
+                <picture className="w-full h-full block">
+                  <source media="(max-width: 767px)" srcSet={image.mobileSrc} />
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    loading="lazy"
+                    decoding="async"
+                    width={400}
+                    height={300}
+                  />
+                </picture>
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <span className="text-white font-serif text-lg font-medium tracking-wide">{image.alt}</span>
                 </div>
@@ -154,14 +188,16 @@ export default function Gallery() {
             onClick={closeLightbox}
           >
             <button
-              className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors z-50"
+              aria-label="Close image lightbox"
+              className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors z-50 p-2 min-w-[44px] min-h-[44px] flex items-center justify-center"
               onClick={closeLightbox}
             >
               <X size={32} />
             </button>
 
             <button
-              className="absolute left-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors z-50 p-2 bg-black/50 rounded-full"
+              aria-label="Previous image"
+              className="absolute left-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors z-50 p-2 min-w-[44px] min-h-[44px] bg-black/50 rounded-full flex items-center justify-center"
               onClick={prevImage}
             >
               <ChevronLeft size={32} />
@@ -172,11 +208,12 @@ export default function Gallery() {
               alt={filteredImages[lightboxIndex].alt}
               className="max-w-full max-h-[90vh] object-contain rounded-lg shadow-2xl"
               onClick={(e) => e.stopPropagation()}
-              referrerPolicy="no-referrer"
+              decoding="async"
             />
 
             <button
-              className="absolute right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors z-50 p-2 bg-black/50 rounded-full"
+              aria-label="Next image"
+              className="absolute right-4 top-1/2 -translate-y-1/2 text-white/70 hover:text-white transition-colors z-50 p-2 min-w-[44px] min-h-[44px] bg-black/50 rounded-full flex items-center justify-center"
               onClick={nextImage}
             >
               <ChevronRight size={32} />

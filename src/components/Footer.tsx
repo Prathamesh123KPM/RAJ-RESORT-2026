@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Youtube } from 'luci
 
 export default function Footer() {
   return (
-    <footer className="bg-charcoal text-white pt-16 pb-8">
+    <footer className="bg-charcoal text-white pt-16 pb-24 md:pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand */}
@@ -18,16 +18,15 @@ export default function Footer() {
               Your perfect beachside escape at Kelva Beach. Experience comfort, family-friendly amenities, and unforgettable memories.
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.facebook.com/share/1Sgqh92po4/?mibextid=wwXIfr" className="text-gray-400 hover:text-sandy transition-colors">
+              <a href="https://www.facebook.com/share/1Sgqh92po4/?mibextid=wwXIfr" aria-label="Visit Raj Resort on Facebook" className="text-gray-400 hover:text-sandy transition-colors" target="_blank" rel="noopener noreferrer">
                 <Facebook size={20} />
               </a>
-              <a href="https://www.instagram.com/raj_resort_kelve_beach_?igsh=MXNobjYxeWdzbTBxdg==" className="text-gray-400 hover:text-sandy transition-colors" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/raj_resort_kelve_beach_?igsh=MXNobjYxeWdzbTBxdg==" aria-label="Visit Raj Resort on Instagram" className="text-gray-400 hover:text-sandy transition-colors" target="_blank" rel="noopener noreferrer">
                 <Instagram size={20} />
               </a>
-              <a href="https://www.youtube.com/@rajresort4284" className="text-gray-400 hover:text-sandy transition-colors" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.youtube.com/@rajresort4284" aria-label="Visit Raj Resort on YouTube" className="text-gray-400 hover:text-sandy transition-colors" target="_blank" rel="noopener noreferrer">
                 <Youtube size={20} />
               </a>
-
             </div>
           </div>
 
@@ -49,6 +48,9 @@ export default function Footer() {
               </li>
               <li>
                 <Link to="/contact" className="text-gray-300 hover:text-sandy transition-colors text-sm">Contact Us</Link>
+              </li>
+              <li>
+                <Link to="/blog" className="text-gray-300 hover:text-sandy transition-colors text-sm">Blog & Travel Guides</Link>
               </li>
             </ul>
           </div>

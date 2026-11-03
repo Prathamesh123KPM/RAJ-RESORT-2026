@@ -34,42 +34,120 @@ export default function BlogPost() {
         return "2026-06-01";
     };
 
-    const blogPostSchema = {
-        "@context": "https://schema.org",
-        "@type": "BlogPosting",
-        "headline": post.title,
-        "description": post.summary,
-        "image": post.image,
-        "datePublished": safeISODate(post.date),
-        "author": {
-            "@type": "Person",
-            "name": post.author || "Raj Resort Team"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "Raj Resort Kelva Beach",
-            "logo": {
-                "@type": "ImageObject",
-                "url": "https://rajresortkelva.com/images/logo.png"
-            }
-        },
-        "mainEntityOfPage": {
-            "@type": "WebPage",
-            "@id": `https://rajresortkelva.com/blog/${post.slug}`
+    const formatImageUrl = (imgUrl: string, width: number) => {
+        if (!imgUrl) return '';
+        if (imgUrl.startsWith('http')) {
+            return imgUrl.includes('?') ? `${imgUrl}&w=${width}&auto=format&fit=crop` : `${imgUrl}?w=${width}&auto=format&fit=crop`;
         }
+        return imgUrl;
     };
 
+    // Extract FAQs dynamically from blog post HTML for Google FAQPage Rich Snippet schema
+    const extractFaqsFromContent = (contentHtml: string) => {
+        const faqs: { question: string; answer: string }[] = [];
+        const regex = /<div class="blog-faq-item">[\s\S]*?<h4>([\s\S]*?)<\/h4>[\s\S]*?<p>([\s\S]*?)<\/p>[\s\S]*?<\/div>/g;
+        let match;
+        while ((match = regex.exec(contentHtml)) !== null) {
+            const q = match[1].replace(/<[^>]*>/g, '').trim();
+            const a = match[2].replace(/<[^>]*>/g, '').trim();
+            if (q && a) {
+                faqs.push({ question: q, answer: a });
+            }
+        }
+        return faqs;
+    };
 
-    const otherPosts = blogPosts.filter(p => p.slug !== slug).slice(0, 2);
+    const faqs = extractFaqsFromContent(post.content);
+
+    const schemaGraph: any[] = [
+        {
+            "@type": "BlogPosting",
+            "@id": `https://rajresortkelva.com/blog/${post.slug}#article`,
+            "isPartOf": {
+                "@type": "WebPage",
+                "@id": `https://rajresortkelva.com/blog/${post.slug}`
+            },
+            "headline": post.title,
+            "description": post.summary,
+            "image": post.image,
+            "datePublished": safeISODate(post.date),
+            "dateModified": safeISODate(post.date),
+            "keywords": post.keywords || `${post.title}, raj resort kelva, kelva beach resort`,
+            "author": {
+                "@type": "Person",
+                "name": post.author || "Raj Resort Team"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Raj Resort Kelva Beach",
+                "url": "https://rajresortkelva.com",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://rajresortkelva.com/images/rajresort.webp"
+                }
+            },
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": `https://rajresortkelva.com/blog/${post.slug}`
+            }
+        },
+        {
+            "@type": "BreadcrumbList",
+            "@id": `https://rajresortkelva.com/blog/${post.slug}#breadcrumb`,
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://rajresortkelva.com"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "https://rajresortkelva.com/blog"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": post.title,
+                    "item": `https://rajresortkelva.com/blog/${post.slug}`
+                }
+            ]
+        }
+    ];
+
+    if (faqs.length > 0) {
+        schemaGraph.push({
+            "@type": "FAQPage",
+            "@id": `https://rajresortkelva.com/blog/${post.slug}#faq`,
+            "mainEntity": faqs.map(faq => ({
+                "@type": "Question",
+                "name": faq.question,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": faq.answer
+                }
+            }))
+        });
+    }
+
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@graph": schemaGraph
+    };
+
+    const otherPosts = [...blogPosts].filter(p => p.slug !== slug).reverse().slice(0, 2);
 
     return (
         <div className="pt-24 pb-20 bg-white">
             <SEO
                 title={`${post.title} | Raj Resort Blog`}
                 description={post.summary}
+                keywords={post.keywords || `${post.title}, raj resort kelva, kelva beach resort, resort in palghar`}
                 image={post.image}
                 type="article"
-                schema={blogPostSchema}
+                schema={structuredData}
             />
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 {/* Breadcrumbs / Back */}
@@ -110,9 +188,11 @@ export default function BlogPost() {
                         className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden shadow-2xl mb-12"
                     >
                         <img
-                            src={`${post.image}&w=${isMobile ? 800 : 2070}`}
+                            src={formatImageUrl(post.image, 1200)}
                             alt={`Cover image for blog post: ${post.title} at Raj Resort Kelva`}
                             className="w-full h-full object-cover"
+                            fetchPriority="high"
+                            decoding="async"
                             width={1200}
                             height={600}
                         />
@@ -134,13 +214,30 @@ export default function BlogPost() {
                     <div className="border-t border-b border-gray-100 py-8 mb-16 flex flex-col sm:flex-row items-center justify-between gap-6">
                         <div className="text-charcoal font-bold text-lg">Did you enjoy this article? Share it!</div>
                         <div className="flex gap-4">
-                            <button className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-ocean hover:text-white transition-all">
+                            <button
+                                aria-label="Share this article on Facebook"
+                                onClick={() => window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_blank')}
+                                className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-ocean hover:text-white transition-all"
+                            >
                                 <Facebook size={18} />
                             </button>
-                            <button className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-ocean hover:text-white transition-all">
+                            <button
+                                aria-label="Share this article on Twitter"
+                                onClick={() => window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(post.title)}`, '_blank')}
+                                className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-ocean hover:text-white transition-all"
+                            >
                                 <Twitter size={18} />
                             </button>
-                            <button className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-ocean hover:text-white transition-all">
+                            <button
+                                aria-label="Copy link to this article"
+                                onClick={() => {
+                                    if (navigator.clipboard) {
+                                        navigator.clipboard.writeText(window.location.href);
+                                        alert('Article link copied to clipboard!');
+                                    }
+                                }}
+                                className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-ocean hover:text-white transition-all"
+                            >
                                 <LinkIcon size={18} />
                             </button>
                         </div>
@@ -159,9 +256,11 @@ export default function BlogPost() {
                             >
                                 <div className="w-24 h-24 flex-shrink-0 rounded-xl overflow-hidden shadow-sm">
                                     <img 
-                                        src={`${otherPost.image}&w=200`} 
+                                        src={formatImageUrl(otherPost.image, 200)} 
                                         alt={`Thumbnail for related article: ${otherPost.title}`} 
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+                                        loading="lazy"
+                                        decoding="async"
                                         width={100}
                                         height={100}
                                     />

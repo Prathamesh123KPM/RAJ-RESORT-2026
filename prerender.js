@@ -90,7 +90,15 @@ async function prerender() {
         console.log(`Prerender server running on port ${PORT}`);
 
         try {
-            const browser = await puppeteer.launch({ headless: "new" });
+            const macChrome = '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
+            const launchOptions = {
+                headless: "new",
+                args: ['--no-sandbox', '--disable-setuid-sandbox']
+            };
+            if (fs.existsSync(macChrome)) {
+                launchOptions.executablePath = macChrome;
+            }
+            const browser = await puppeteer.launch(launchOptions);
 
             for (const route of routes) {
                 console.log(`Prerendering ${route}...`);
