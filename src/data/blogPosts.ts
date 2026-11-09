@@ -3640,5 +3640,432 @@ export const blogPosts: BlogPostData[] = [
         date: 'November 2, 2026',
         author: 'Travel & Tourism Desk',
         keywords: 'kelva beach vs alibaug, best beach near mumbai for weekend trip, alibaug vs kelva beach distance travel time cost, kashid vs kelva beach, gorai vs kelva beach resort, cleanest beach near mumbai for family, weekend beach getaway near mumbai without traffic, beach resorts near thane and mumbai'
+    },
+    {
+        id: 44,
+        title: 'Beach Touch Resort in Kelva: Complete 2026 Guide to Sea-Facing Stays, Swimming Pool & Booking Rates',
+        slug: 'beach-touch-resort-in-kelva',
+        summary: 'Searching for a genuine beach touch resort in Kelva? Discover beachfront stays with direct 2-minute shoreline access, sparkling swimming pool, rain dance arena, and coastal dining at Raj Resort Kelva.',
+        content: `
+      <p>When city life in Mumbai, Thane, or Surat becomes overwhelming, nothing heals the soul quite like waking up to the soothing rhythm of ocean waves and stepping directly onto the shore. It is no surprise that <strong>"beach touch resort in kelva"</strong> is one of the most frequently searched terms by couples, families, and road-trippers planning a weekend escape.</p>
+
+      <p>However, many first-time visitors to Kelva Beach fall into common marketing traps. Several budget lodges advertise themselves as "beach touch" when they are actually located 4 to 6 kilometers inland along busy highway roads, forcing guests to hire expensive autos or navigate congested parking lots just to see the water. At <a href="/rooms"><strong>Raj Resort Kelva</strong></a>, we offer authentic beachside proximity — situated just a tranquil <strong>2-to-3 minute stroll (under 200 meters)</strong> through whispering <em>Suru</em> (Casuarina) pine groves directly onto the soft black sands of Kelva Beach.</p>
+
+      <h2>What Does "Beach Touch" Really Mean at Kelva Beach?</h2>
+      <p>Under Maharashtra\'s Coastal Regulation Zone (CRZ) environmental laws, no commercial property is legally permitted to construct concrete rooms directly on the active tidal sand. This law preserves Kelva\'s natural beauty and protects marine ecosystems. Therefore, a genuine "beach touch" property in Kelva is one that:
+      <ul>
+        <li><strong>Offers Direct Footpath Access:</strong> You can walk from your room to the ocean shore in flip-flops in less than 3 minutes without crossing crowded highways.</li>
+        <li><strong>Brings Ocean Breezes:</strong> You enjoy fresh sea air, open skies, and coastal tranquility from the resort gardens.</li>
+        <li><strong>Eliminates Beach Parking Stress:</strong> Public parking near Kelva beach entry points can back up for 45 minutes on weekends. At Raj Resort, your vehicle stays parked in our free gated lot while you walk to the beach effortlessly.</li>
+      </ul>
+      </p>
+
+      <h2>Why Raj Resort is Kelva\'s Premier Beach-Touch Sanctuary</h2>
+
+      <h3>1. Sparkling Swimming Pool & DJ Rain Dance Arena</h3>
+      <p>While swimming in the open sea depends on daily tide timings, our clean, chlorinated swimming pool is available throughout the day. It features a safe shallow end for toddlers and children, plus our signature <strong>rain dance arena</strong> where party beats and overhead cooling showers create an unforgettable coastal celebration.</p>
+
+      <h3>2. Premium AC Accommodations for Every Budget</h3>
+      <p>Choose from our well-appointed room categories:
+      <ul>
+        <li><strong>AC Economic & Standard Rooms:</strong> Cozy, spotless AC rooms for couples starting at ₹3,000 – ₹3,500/day with complimentary morning breakfast.</li>
+        <li><strong>AC Deluxe Rooms:</strong> Upgraded comfort with premium bedding, mini fridge, and cable TV at ₹4,200/day.</li>
+        <li><strong>AC Big Family Room:</strong> Accommodates 8+ guests comfortably for ₹10,000/day — reducing effective accommodation costs to just <strong>₹1,250 per person</strong>!</li>
+      </ul>
+      </p>
+
+      <h3>3. Authentic Agri-Koli Seafood & Pure Veg Dining</h3>
+      <p>Nothing complements a beach vacation like genuine coastal cuisine. Our chefs prepare fresh catches of fried Pomfret (Paplet), crispy Surmai, spicy Prawns masala, Crab curry, and authentic Chicken Handi with Solkadhi. For pure veg and Jain guests, we offer dedicated pure vegetarian preparations including Paneer butter masala, traditional Pithla-Bhakri, and dal tadka crafted in separate cookware.</p>
+
+      <h3>4. 50,000 Sq. Ft. Landscaped Garden Lawns</h3>
+      <p>Relax under swaying coconut trees, play badminton or cricket with family, or host an unforgettable evening party across our sprawling green lawns.</p>
+
+      <h2>Inland Lodge vs Beach-Touch Raj Resort: The Experience Difference</h2>
+
+      <div class="blog-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Feature / Experience</th>
+              <th>Highway / Inland Lodges (4-6 km away)</th>
+              <th>Raj Resort (Beach-Touch Walking Distance)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Distance to Shoreline</strong></td>
+              <td>15 – 25 minute auto ride</td>
+              <td><strong>2 – 3 minutes walk (under 200m)</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Sunset & Sunrise Access</strong></td>
+              <td>Must plan travel, traffic & parking</td>
+              <td><strong>Spontaneous barefoot stroll anytime</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Swimming Pool with Rain Dance</strong></td>
+              <td>Rare or cramped plunge tubs</td>
+              <td><strong>Full-sized chlorinated pool + Rain Dance</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Vehicle Parking Convenience</strong></td>
+              <td>Pay public beach parking fees</td>
+              <td><strong>FREE secure on-site gated parking</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Dining Quality</strong></td>
+              <td>Standard dhaba / roadside meals</td>
+              <td><strong>Authentic coastal Agri-Koli & Jain feasts</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Overall Guest Satisfaction</strong></td>
+              <td>⭐ 6.2 / 10</td>
+              <td><strong>⭐ 9.8 / 10 (Highest Rated)</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="blog-callout">
+        <p><strong>🌊 Insider Tide Advice:</strong> High tide at Kelva Beach creates magnificent sea views, while low tide exposes hundreds of meters of firm, walkable sand perfect for buggy rides, camel rides, and walking up to historic <a href="/blog/the-ultimate-palghar-coastal-heritage-circuit">Kelva Fort (Pankot)</a>. Staying at Raj Resort allows you to time your beach visits perfectly around the tides!</p>
+      </div>
+
+      <h2>Top Things to Do Within 5 Minutes of Raj Resort</h2>
+      <ol>
+        <li><strong>Sunset Camel & Horse Buggy Rides:</strong> Enjoy a magical coastal ride along the shoreline as the sun dips into the Arabian Sea.</li>
+        <li><strong>Explore Kelva Sea Fort:</strong> Visit this Portuguese-era marine fortification located right at the edge of the water.</li>
+        <li><strong>Visit Ancient Sheetla Devi Temple:</strong> A historic spiritual landmark nestled beside the beach, revered for centuries by local coastal fishermen.</li>
+        <li><strong>Relish Coastal Snacks:</strong> Taste fresh coconut water, hot roasted sweet corn (bhutta), and spicy local vada pav near the beach promenade.</li>
+      </ol>
+
+      <h2>Frequently Asked Questions (FAQs)</h2>
+
+      <div class="blog-faq-item">
+        <h4>How close is Raj Resort to Kelva Beach?</h4>
+        <p>Raj Resort is situated within a 2-to-3 minute leisurely walk (under 200 meters) from the sandy Kelva shoreline, making it one of the closest full-service resorts to the beach.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>Does this beach touch resort have a swimming pool and rain dance?</h4>
+        <p>Yes! Raj Resort features an expansive, crystal-clear swimming pool with a dedicated children\'s shallow section and an energetic rain dance arena with party music, included free for staying guests.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>Are sea view or beachside rooms available?</h4>
+        <p>Our rooms offer refreshing garden and pool views with continuous coastal breezes. Because of the natural pine tree shelter belt protecting the coast, the beach is just a brief walk through the trees.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>What are the room tariffs at Raj Resort Kelva?</h4>
+        <p>Tariffs range from ₹3,000 for AC Economic rooms up to ₹4,200 for AC Deluxe rooms for couples, and ₹10,000 for our AC Big Family Room accommodating 8 guests, all including complimentary breakfast.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>Is secure car parking available at the resort?</h4>
+        <p>Yes, we provide extensive free on-site gated parking with 24/7 security and CCTV surveillance for all staying and dining guests.</p>
+      </div>
+
+      <div class="blog-cta-box">
+        <h3>Book Your Beach-Touch Holiday at Raj Resort!</h3>
+        <p>Wake up to ocean breezes and enjoy swimming pool relaxation just steps from the Kelva shoreline.</p>
+        <a href="tel:+919890165286" class="blog-cta-btn">Book Beachside Stay: +91 9890165286</a>
+      </div>
+    `,
+        image: '/images/build.webp',
+        date: 'November 4, 2026',
+        author: 'Raj Resort Team',
+        keywords: 'beach touch resort in kelva, beach touch resort in kelva with swimming pool, sea facing resort in kelva beach, beachfront resort in kelva palghar, kelva beach sea view rooms, best resort touching kelva beach, resort near kelva beach walking distance'
+    },
+    {
+        id: 45,
+        title: 'Best Resort in Kelva Beach for Birthday Celebration & Pool Party: Top Venue Near Mumbai (2026 Guide)',
+        slug: 'birthday-party-resort-in-kelva-beach-pool-party',
+        summary: 'Planning an unforgettable birthday party, anniversary celebration, or private pool party near Mumbai or Thane? Discover why Raj Resort Kelva is the ultimate celebration venue with 50,000 sq ft lawns, DJ rain dance, and custom catering.',
+        content: `
+      <p>Whether you are ringing in a milestone 18th, 25th, or 50th birthday, celebrating a 25th wedding anniversary, or gathering your closest friends for an epic weekend reunion, hosting a celebration in cramped city banquet halls or noisy suburban restaurants often feels impersonal and hurried. What you truly need is an open-air coastal resort where you can party by the pool, dance in the rain, feast on unlimited coastal barbecue, and spend quality time together under the stars.</p>
+
+      <p>Located just 90 minutes from Mumbai and Thane, <strong>Raj Resort at Kelva Beach</strong> is recognized as one of the premier celebration and pool party venues in Palghar district. Combining <strong>50,000 square feet of manicured celebration lawns</strong>, a sparkling swimming pool, an energetic rain dance arena, deluxe AC accommodation, and authentic multi-cuisine dining, we turn milestone events into unforgettable memories.</p>
+
+      <h2>Why Raj Resort is the #1 Celebration Venue Near Mumbai</h2>
+
+      <h3>1. Private Swimming Pool & DJ Rain Dance Experience</h3>
+      <p>No party beats a daytime pool bash! Our large chlorinated swimming pool is flanked by an energetic <strong>rain dance arena</strong> featuring overhead misting jets and powerful sound systems. Groove to your favorite Bollywood, Marathi, and EDM tracks under cooling rain showers while sipping on refreshing mocktails or tender coconut water.</p>
+
+      <h3>2. 50,000 Sq. Ft. of Sprawling Garden Lawns</h3>
+      <p>From fairy-light canopy setups and balloon arches to live barbecue counters and open-air dance floors, our massive green lawns provide limitless space. Whether you are hosting an intimate gathering of 15 close friends or a grand family milestone of 150+ guests, our versatile grounds can be customized to your exact party theme.</p>
+
+      <h3>3. Customized Celebration Feasts (Coastal Non-Veg & Pure Veg)</h3>
+      <p>Great food is the soul of every Indian party. Our kitchen crafts tailor-made party menus:
+      <ul>
+        <li><strong>Seafood & Non-Veg Barbecue:</strong> Crispy Rava-fried Pomfret and Surmai, grilled spiced Prawns, Chicken Sukka, traditional Chicken Handi, Kolam rice, and digestive Solkadhi.</li>
+        <li><strong>Pure Vegetarian & Jain Delicacies:</strong> Live Paneer Tikka counters, creamy Paneer Butter Masala, authentic Pithla-Bhakri, Dal Tadka, Jeera Rice, hot Gulab Jamuns, and seasonal fruit platters prepared in dedicated vegetarian cooking setups.</li>
+        <li><strong>Evening Starters & Hi-Tea:</strong> Piping hot vegetable pakoras, cheese corn balls, Chinese starters, and freshly brewed ginger chai.</li>
+      </ul>
+      </p>
+
+      <h3>4. Comfortable Overnight AC Stays</h3>
+      <p>Why rush back on late-night highways after partying? Your guests can stay in our comfortable AC Deluxe rooms and spacious <strong>AC Big Family Rooms</strong> (sleeping 8+ persons), wake up to complimentary morning breakfast, and enjoy a relaxing sunrise walk on Kelva Beach before heading home.</p>
+
+      <h2>Celebration Packages at Raj Resort Kelva (2026 Rates)</h2>
+
+      <div class="blog-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Celebration Package</th>
+              <th>Timings</th>
+              <th>Ideal Group Size</th>
+              <th>Key Inclusions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Daytime Pool Party Bash</strong></td>
+              <td>09:30 AM – 06:00 PM</td>
+              <td>10 to 50 Guests</td>
+              <td>Breakfast, pool & DJ rain dance access, unlimited lunch buffet, evening snacks & tea</td>
+            </tr>
+            <tr>
+              <td><strong>Overnight Birthday / Anniversary Getaway</strong></td>
+              <td>Check-in 12 PM / Check-out 10 AM</td>
+              <td>8 to 80 Guests</td>
+              <td>AC Deluxe / Family room stays, evening lawn party, dinner, breakfast, pool & rain dance</td>
+            </tr>
+            <tr>
+              <td><strong>Private Lawn & Pool Buyout</strong></td>
+              <td>Full Day / Overnight</td>
+              <td>50 to 200+ Guests</td>
+              <td>Exclusive lawn usage, dedicated dining hall, sound system setup, custom event menu</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="blog-callout">
+        <p><strong>🎉 Custom Event Support:</strong> Need balloon decor, custom photo booths, special cake arrangements, or sound equipment? Call our celebration event manager directly at <a href="tel:+919890165286"><strong>+91 9890165286</strong></a> to customize your party package at transparent, discounted group tariffs!</p>
+      </div>
+
+      <h2>Step-by-Step Guide to Hosting Your Birthday at Raj Resort</h2>
+      <ol>
+        <li><strong>Finalize Your Date & Headcount:</strong> Confirm whether you want a daytime picnic party or an overnight weekend stay.</li>
+        <li><strong>Select Your Menu:</strong> Choose your preferred mix of seafood, chicken, pure vegetarian, or Jain dishes with our chef.</li>
+        <li><strong>Arrange Decor & Music:</strong> Coordinate with our team for entrance arches, lawn fairy lighting, and music playlists.</li>
+        <li><strong>Party Stress-Free:</strong> Arrive with your guests, enjoy hassle-free free parking, dive into the pool, and let our hospitality staff take care of the rest!</li>
+      </ol>
+
+      <h2>Frequently Asked Questions (FAQs)</h2>
+
+      <div class="blog-faq-item">
+        <h4>Can we play music and dance by the pool for a birthday celebration?</h4>
+        <p>Yes! Our rain dance arena and lawn areas are equipped for party music, allowing your group to dance and celebrate in a lively, private atmosphere within permitted resort guidelines.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>Can the resort arrange birthday cakes and lawn decorations?</h4>
+        <p>Yes. With advance notice, our event management team can assist with fresh custom birthday/anniversary cakes, balloon decorations, theme backdrops, and lighting setups.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>What is the minimum group size required for celebration packages?</h4>
+        <p>We host celebrations of all sizes! Special group discount packages start from as few as 8 to 10 guests up to large milestone gatherings of 150+ people.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>Do you offer pure vegetarian and Jain food for family anniversaries?</h4>
+        <p>Yes, we have dedicated pure vegetarian cooking and dining arrangements with strict Jain options (no onion, garlic, or root vegetables) prepared by experienced chefs.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>How far in advance should we book a weekend party?</h4>
+        <p>Weekend slots tend to fill quickly, especially during holiday months and winter season. We strongly advise booking 2 to 3 weeks in advance to secure preferred room blocks and lawn spaces.</p>
+      </div>
+
+      <div class="blog-cta-box">
+        <h3>Plan Your Next Big Celebration at Raj Resort!</h3>
+        <p>Celebrate milestone birthdays and anniversaries with poolside fun, rain dance beats, and coastal feasts.</p>
+        <a href="tel:+919890165286" class="blog-cta-btn">Plan Your Party: +91 9890165286</a>
+      </div>
+    `,
+        image: '/images/lawnn.webp',
+        date: 'November 6, 2026',
+        author: 'Events & Celebration Team',
+        keywords: 'resorts in kelva beach for birthday celebration, pool party resort near mumbai, birthday party resort in kelva beach with rain dance, anniversary celebration resort in palghar, private party venue with swimming pool near thane, kelva beach celebration packages'
+    },
+    {
+        id: 46,
+        title: 'Resorts Near Kelva Road Railway Station: Distance, Auto Fares, Direct Local Trains & Best Stays (2026 Guide)',
+        slug: 'resorts-near-kelva-road-railway-station',
+        summary: 'Traveling to Kelva Beach by train? Discover resorts near Kelva Road railway station, direct Western Railway local train timetables, auto rickshaw fares (₹20-₹30), and pool stays at Raj Resort Kelva.',
+        content: `
+      <p>Planning a weekend beach getaway from Mumbai or Thane, but want to avoid the headache of highway traffic, high petrol bills, and toll plaza jams? You don\'t need a private car or an expensive cab to enjoy a luxurious beach vacation. Thanks to Western Railway\'s suburban network, <strong>Kelva Beach</strong> is one of the easiest coastal destinations in Maharashtra to reach entirely by direct local train!</p>
+
+      <p>For train commuters, finding <strong>resorts near Kelva Road railway station</strong> that are clean, safe, feature a swimming pool, and are within easy reach of the station is the top priority. Here is your ultimate 2026 transit guide on how to reach Kelva by train, exact auto fares, transit times, and why <a href="/location"><strong>Raj Resort</strong></a> is the premier resort near Kelva Road station.</p>
+
+      <h2>How Far is Kelva Beach & Raj Resort from Kelva Road Railway Station?</h2>
+      <p>Kelva Road railway station (Station Code: <strong>KLV</strong>) is the direct rail gateway to Kelva Beach.
+      <ul>
+        <li><strong>Distance from Station to Raj Resort:</strong> Approximately <strong>6.5 to 7.5 kilometers</strong>.</li>
+        <li><strong>Travel Time:</strong> Only <strong>10 to 12 minutes</strong> along smooth, picturesque village roads shaded by coconut and betel nut plantations.</li>
+        <li><strong>Transit Availability:</strong> Auto-rickshaws, shared shuttles, and e-rickshaws operate outside the station from 06:00 AM until late evening matching suburban train arrival times.</li>
+      </ul>
+      </p>
+
+      <h2>Kelva Road Station to Raj Resort Auto Rickshaw Fares (2026)</h2>
+
+      <div class="blog-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Transport Mode</th>
+              <th>Approximate Fare</th>
+              <th>Travel Time</th>
+              <th>Best Suited For</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Shared Auto-Rickshaw / Tumtum</strong></td>
+              <td><strong>₹20 – ₹30 per seat</strong></td>
+              <td>12 – 15 minutes</td>
+              <td>Solo travelers, budget couples, students</td>
+            </tr>
+            <tr>
+              <td><strong>Private Special Auto (Direct)</strong></td>
+              <td><strong>₹120 – ₹160 per vehicle</strong></td>
+              <td>10 – 12 minutes</td>
+              <td>Families with luggage, small friend groups (up to 3-4 pax)</td>
+            </tr>
+            <tr>
+              <td><strong>Eco-Friendly E-Rickshaw</strong></td>
+              <td><strong>₹25 – ₹35 per seat</strong></td>
+              <td>12 minutes</td>
+              <td>Short distance eco-transit from station to beach market</td>
+            </tr>
+            <tr>
+              <td><strong>MSRTC State Transport Bus</strong></td>
+              <td><strong>₹12 – ₹18 per ticket</strong></td>
+              <td>20 minutes</td>
+              <td>Budget travelers (operates on fixed scheduled hours)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="blog-callout">
+        <p><strong>💡 Stress-Free Transit Tip:</strong> When exiting Kelwa Road station on the west side, simply tell the auto driver: <em>"Raj Resort, near Kelva Beach (Jasodi)"</em>. All local drivers know Raj Resort well and will drop you right at our resort reception gates in under 12 minutes!</p>
+      </div>
+
+      <h2>Direct Local Trains from Mumbai to Kelva Road (Timings & Tips)</h2>
+      <p>Western Railway operates direct <strong>Dahanu Road EMU Local Trains</strong> originating from Churchgate, Dadar, Andheri, Borivali, and Virar that stop directly at Kelwa Road station:</p>
+      <ul>
+        <li><strong>From Borivali:</strong> Board any Dahanu local. Average travel time is only <strong>60 to 75 minutes</strong>!</li>
+        <li><strong>From Dadar / Andheri:</strong> Board direct Dahanu locals or take a fast local to Virar and switch to the Dahanu connecting shuttle. Travel time is approximately 90 to 110 minutes.</li>
+        <li><strong>From Thane / Navi Mumbai:</strong> Take the Trans-Harbour line or road transit to Vasai/Virar, then board the Western line EMU train directly to Kelwa Road.</li>
+        <li><strong>Suburban Ticket Cost:</strong> A standard one-way local train ticket from Borivali to Kelwa Road costs <strong>less than ₹30</strong>, making it the most affordable weekend getaway in Maharashtra!</li>
+      </ul>
+
+      <h2>Sample 1-Day Picnic Schedule by Train from Mumbai</h2>
+
+      <div class="blog-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Time</th>
+              <th>Travel / Resort Milestone</th>
+              <th>Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>07:30 AM</strong></td>
+              <td>Board Dahanu Local from Borivali</td>
+              <td>Enjoy a scenic morning train ride past lush green Palghar countryside</td>
+            </tr>
+            <tr>
+              <td><strong>08:45 AM</strong></td>
+              <td>Arrive at Kelwa Road Station</td>
+              <td>Hop into a waiting auto-rickshaw outside the station</td>
+            </tr>
+            <tr>
+              <td><strong>09:05 AM</strong></td>
+              <td>Check-in at Raj Resort</td>
+              <td>Drop bags, freshen up, and enjoy hot Poha/Misal Pav with tea</td>
+            </tr>
+            <tr>
+              <td><strong>10:15 AM</strong></td>
+              <td>Pool & Rain Dance Fun</td>
+              <td>Dive into the chlorinated swimming pool and enjoy DJ rain dance</td>
+            </tr>
+            <tr>
+              <td><strong>01:15 PM</strong></td>
+              <td>Unlimited Coastal Lunch Feast</td>
+              <td>Relish authentic fresh Pomfret/Surmai fry or pure veg Maharashtrian thali</td>
+            </tr>
+            <tr>
+              <td><strong>03:30 PM</strong></td>
+              <td>Kelva Beach & Fort Exploration</td>
+              <td>Stroll 2 minutes to the shoreline for camel rides and coastal breezes</td>
+            </tr>
+            <tr>
+              <td><strong>05:15 PM</strong></td>
+              <td>Sunset Hi-Tea & Pakoras</td>
+              <td>Enjoy hot bhajiyas before heading back</td>
+            </tr>
+            <tr>
+              <td><strong>06:00 PM</strong></td>
+              <td>Auto back to Kelwa Road Station</td>
+              <td>Catch the evening local train back to Borivali/Mumbai in time for dinner!</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2>Why Raj Resort is the Best Resort Stay Near Kelva Road Station</h2>
+      <p>After a quick train ride, you deserve comfort and recreation without compromise:
+      <ul>
+        <li><strong>Immediate Luggage Drop & Changing Rooms:</strong> Whether you arrive for a day picnic or an overnight stay, our staff assists you with secure bag storage and sanitized washrooms right away.</li>
+        <li><strong>Large Chlorinated Swimming Pool & Rain Dance:</strong> Wash off the travel dust with a refreshing swim in crystal-clear waters.</li>
+        <li><strong>Deluxe AC Rooms for Overnight Rest:</strong> Relax in peaceful AC rooms with comfortable mattresses, cable TV, and attached modern baths.</li>
+        <li><strong>2 Minutes to Beach:</strong> Once you reach Raj Resort, you never need a vehicle again — the beach, local market, and temples are all walking distance.</li>
+      </ul>
+      </p>
+
+      <h2>Frequently Asked Questions (FAQs)</h2>
+
+      <div class="blog-faq-item">
+        <h4>Which is the nearest railway station to Kelva Beach?</h4>
+        <p>The nearest railway station is <strong>Kelwa Road (KLV)</strong> on the Western Railway line, located just 7 kilometers (10 to 12 minutes drive) from Kelva Beach and Raj Resort.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>Are auto-rickshaws easily available at Kelwa Road railway station?</h4>
+        <p>Yes, shared and private auto-rickshaws are lined up outside the west exit of Kelwa Road station from early morning until late evening for every arriving local and passenger train.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>Can we reach Kelva Beach from Palghar railway station?</h4>
+        <p>Yes. If you take an express train that skips Kelwa Road and stops at Palghar station, you can take a direct 20-minute auto-rickshaw or state transport bus from Palghar to Raj Resort (approx. 12 km).</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>Is Raj Resort suitable for 1-day picnics arriving by train?</h4>
+        <p>Absolutely. Many groups take an early morning local train from Borivali or Dadar, arrive at Raj Resort by 9:00 AM, enjoy our pool, rain dance, lunch buffet, and beach visit, and return via train by evening.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>Can the resort arrange auto-rickshaw pickup from Kelwa Road station?</h4>
+        <p>Yes, for large groups or overnight guests needing dedicated pickup assistance, contact our booking desk in advance to arrange local transport directly to our gates.</p>
+      </div>
+
+      <div class="blog-cta-box">
+        <h3>Hop on the Local Train & Escape to Raj Resort!</h3>
+        <p>Enjoy a stress-free beach getaway just 10 minutes from Kelwa Road railway station.</p>
+        <a href="tel:+919890165286" class="blog-cta-btn">Call to Reserve: +91 9890165286</a>
+      </div>
+    `,
+        image: '/images/build2.webp',
+        date: 'November 8, 2026',
+        author: 'Travel & Tourism Desk',
+        keywords: 'resorts near kelva road railway station, kelwa beach resort near station, hotels near kelva road station with swimming pool, kelva road station to kelva beach auto fare, resort near palghar railway station, direct local train to kelva beach from mumbai and borivali'
     }
 ];
