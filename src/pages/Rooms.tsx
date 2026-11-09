@@ -221,7 +221,7 @@ export default function Rooms() {
       <SEO
         title="Rooms & Tariffs - Raj Resort Kelva Beach"
         description="Check official room tariffs for AC Economic, Standard, Deluxe, and Big Family Rooms at Raj Resort Kelva Beach. Includes complimentary breakfast, check-in 12:00 PM, check-out 10:00 AM."
-        keywords="kelva beach resort room rates, ac deluxe rooms kelva, raj resort tariff, big family room kelva beach, budget stay in kelva beach palghar, hotel booking kelva beach, resort night stay packages"
+        keywords="kelva beach resort room rates, ac deluxe rooms kelva, raj resort tariff 2026, big family room kelva beach, budget beach resorts near mumbai under 2000, budget stay in kelva beach palghar, hotel booking kelva beach, resort night stay packages, beach touch resort in kelva"
         schema={roomsSchema}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

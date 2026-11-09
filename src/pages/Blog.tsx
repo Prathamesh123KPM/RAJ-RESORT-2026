@@ -74,7 +74,7 @@ export default function Blog() {
             <SEO
                 title="Blog | Raj Resort Kelva Beach - Tips & Local Guide"
                 description="Read the latest travel tips, local guides, and resort updates from Raj Resort Kelva Beach."
-                keywords="raj resort blog, kelva beach travel guide, palghar tourism, things to do in kelva beach, kelva beach resort packages, weekend getaways near mumbai"
+                keywords="raj resort blog, kelva beach travel guide, palghar tourism, beach touch resort in kelva, kelva beach one day picnic charges, budget beach resorts near mumbai, things to do in kelva beach, kelva beach resort packages, weekend getaways near mumbai, resorts near kelva road railway station"
                 schema={blogSchema}
             />
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

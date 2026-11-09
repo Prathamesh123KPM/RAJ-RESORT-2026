@@ -120,7 +120,7 @@ export default function Amenities() {
       <SEO
         title="Amenities - Raj Resort Kelva Beach"
         description="Enjoy premium resort amenities at Raj Resort Kelva Beach. Relax by our pristine swimming pool, stroll through lush gardens, and savor delicious dining."
-        keywords="kelva beach resort with swimming pool, rain dance resort in palghar, resort with water slides kelva, lawn resort in palghar, dining and restaurant kelva beach, outdoor play area resort kelva"
+        keywords="kelva beach resort with swimming pool, rain dance resort in palghar, pool party resort near mumbai, resort with water slides kelva, lawn resort in palghar, 50000 sq ft lawn venue palghar, resorts in kelva beach for birthday celebration, dining and restaurant kelva beach, outdoor play area resort kelva"
         schema={amenitiesSchema}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

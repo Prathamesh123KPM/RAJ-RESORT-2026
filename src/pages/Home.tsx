@@ -130,7 +130,7 @@ export default function Home() {
       <SEO
         title="Raj Resort Kelva - Premium Beachside Resort In Kelva"
         description="Experience paradise at Raj Resort, a premium beachside resort at Kelva Beach. Enjoy comfortable AC rooms, a relaxing pool, and authentic local cuisine."
-        keywords="raj resort, raj resort kelva, best resort in kelva beach, resort in palghar, beach resort near mumbai, 1 day picnic resort in kelva, kelva beach resort with swimming pool, rain dance resort kelva, palghar resort for family, weekend getaway near mumbai, hotels in kelva beach"
+        keywords="raj resort, raj resort kelva, best resort in kelva beach, beach touch resort in kelva, resorts near kelva beach walking distance, resorts near kelva road railway station, kelva beach one day picnic charges, budget beach resorts near mumbai, resort in palghar, beach resort near mumbai, 1 day picnic resort in kelva, kelva beach resort with swimming pool, rain dance resort kelva, resorts in kelva beach for birthday celebration, palghar resort for family, weekend getaway near mumbai, hotels in kelva beach"
         schema={homeSchema}
       />
       {/* Hero Section */}

@@ -59,7 +59,7 @@ export default function Location() {
       <SEO
         title="Location & Travel - Raj Resort Kelva Beach"
         description="Find your way to Raj Resort at Kelva Beach. View our location map, get directions from Mumbai or Pune, and explore nearby attractions like Kelva Fort."
-        keywords="how to reach kelva beach, directions to raj resort kelva, mumbai to kelva beach distance, thane to kelva beach train route, kelwa road station to beach, places near kelva beach"
+        keywords="resorts near kelva road railway station, how to reach kelva beach, directions to raj resort kelva, mumbai to kelva beach distance, thane to kelva beach train route, kelwa road station to beach auto fare, direct local train to kelva beach, places near kelva beach"
         schema={resortLocationSchema}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

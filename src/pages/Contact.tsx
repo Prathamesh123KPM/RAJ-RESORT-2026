@@ -93,7 +93,7 @@ export default function Contact() {
       <SEO
         title="Contact Us - Raj Resort Kelva Beach"
         description="Contact Raj Resort to book your perfect Kelva Beach getaway. Find our phone number, email, and address. Reach out today for reservations and inquiries."
-        keywords="raj resort contact number, kelva beach resort booking phone, raj resort phone number, resort manager contact kelva, kelva resort address directions"
+        keywords="raj resort contact number, kelva beach resort booking phone, raj resort phone number, resort manager contact kelva, kelva resort address directions, kelva beach room reservation whatsapp, day picnic booking kelva"
         schema={contactPageSchema}
       />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
