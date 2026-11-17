@@ -4067,5 +4067,488 @@ export const blogPosts: BlogPostData[] = [
         date: 'November 8, 2026',
         author: 'Travel & Tourism Desk',
         keywords: 'resorts near kelva road railway station, kelwa beach resort near station, hotels near kelva road station with swimming pool, kelva road station to kelva beach auto fare, resort near palghar railway station, direct local train to kelva beach from mumbai and borivali'
+    },
+    {
+        id: 47,
+        title: 'Best Resort Near Kelva Beach, Palghar – A Perfect Weekend Getaway',
+        slug: 'best-resort-near-kelva-beach-palghar-weekend-getaway',
+        summary: 'Planning an escape from Mumbai or Thane? Discover why Raj Resort is the best resort near Kelva Beach, Palghar, featuring clean AC rooms, a large swimming pool, DJ rain dance, authentic coastal seafood, and a 2-minute walk to the shore.',
+        content: `
+      <p>When the relentless rush of Mumbai, Thane, or Navi Mumbai begins to drain your energy, nothing restores your spirit faster than the fresh, salty breeze of the Arabian Sea. But in recent years, traditional weekend destinations like Alibaug and Lonavala have become victims of their own popularity. Between 4-hour traffic bottlenecks, expensive Ro-Ro ferry bookings, and crowded hotel corridors charging upwards of ₹8,000 per night, a quick weekend getaway can end up creating more stress than it relieves.</p>
+
+      <p>Fortunately, nestled along the scenic North Konkan coastline just 95 kilometers north of Mumbai, lies a tranquil coastal haven: <strong>Kelva Beach in Palghar</strong>. Fringed by dense <em>Suru</em> (Casuarina) pine groves and an expansive 8-kilometer stretch of clean sand, Kelva provides the ideal balance of untouched nature and easy accessibility. And when searching for the <a href="/rooms"><strong>best resort near Kelva Beach</strong></a> for a truly rejuvenating stay, <strong>Raj Resort</strong> stands out as the premier choice for couples, families, and friend groups alike.</p>
+
+      <h2>Why Choose Kelva Beach for Your Weekend Getaway?</h2>
+      <p>Unlike crowded tourist hubs, Kelva Beach preserves the charm of authentic coastal Maharashtra. Here is why discerning travelers from Mumbai, Thane, and Gujarat are choosing Kelva:
+      <ul>
+        <li><strong>Effortless 90-Minute Drive:</strong> Kelva Beach is directly accessible via the smooth 4-lane Western Express Highway (NH48) via Manor, sparing you from narrow winding ghats or ferry waiting lines.</li>
+        <li><strong>Seamless Direct Local Train Connectivity:</strong> Western Railway operates frequent direct Dahanu EMU suburban locals from Churchgate, Dadar, Andheri, and Borivali directly to Kelwa Road station in roughly 75 minutes for under ₹30!</li>
+        <li><strong>Uncommercialized Natural Beauty:</strong> The shoreline remains broad, clean, and bordered by aromatic pine trees, offering peaceful morning strolls, sunset buggy rides, and water sports without overwhelming tourist crowds.</li>
+      </ul>
+      </p>
+
+      <h2>What Makes Raj Resort the Best Resort Near Kelva Beach, Palghar?</h2>
+      <p>Located in Jasodi, just a peaceful <strong>2-to-3 minute walk (under 200 meters)</strong> from the Kelva shoreline, Raj Resort blends warm coastal hospitality with modern resort comforts. Here are the standout facilities that make us the highest-rated property in the region:</p>
+
+      <h3>1. Sparkling Swimming Pool & Energetic DJ Rain Dance Arena</h3>
+      <p>Nothing defines a summer or weekend holiday quite like water fun. Our resort features a spacious, chlorinated swimming pool with crystal-clear water maintained to rigorous hygiene standards. Designed with a gentle 3-foot shallow area for young children and deeper sections for adults, the pool is accompanied by our signature <strong>rain dance arena</strong>. Overhead cooling showers paired with popular party music create an exhilarating experience for friends and families looking to let loose.</p>
+
+      <div class="my-6 text-center">
+        <img src="/images/pool.webp" alt="Pristine swimming pool and rain dance arena at Raj Resort near Kelva Beach Palghar" class="rounded-2xl shadow-lg mx-auto w-full max-w-2xl object-cover h-72 md:h-96" />
+        <p class="text-xs text-gray-500 mt-2">Crystal-clear swimming pool with rain dance setup at Raj Resort Kelva Beach</p>
+      </div>
+
+      <h3>2. Spotless, Well-Appointed AC Rooms for Every Traveler</h3>
+      <p>Whether you are on a romantic retreat, an annual family holiday, or a large reunion, our accommodations provide superior comfort and privacy. Explore our rooms via our <a href="/rooms">Rooms & Tariffs page</a>:
+      <ul>
+        <li><strong>AC Economic Room (₹3,000/day for 2 persons):</strong> Ideal for solo travelers and couples seeking clean budget comfort with attached bath and complimentary breakfast.</li>
+        <li><strong>AC Standard Room (₹3,500/day for 2 persons):</strong> Features cable TV, comfortable bedding, modern bathroom amenities, and complimentary breakfast.</li>
+        <li><strong>AC Deluxe Room (₹4,200/day for 2 persons):</strong> Our most popular choice, offering premium mattresses, a mini fridge, cable TV, and upgraded interiors.</li>
+        <li><strong>AC Big Family Room (₹10,000/day for 8+ persons):</strong> Expansive suite with multiple beds, seating areas, and attached baths, bringing the effective accommodation cost to just <strong>₹1,250 per person</strong>!</li>
+      </ul>
+      </p>
+
+      <div class="my-6 text-center">
+        <img src="/images/rooms/ac-deluxe.webp" alt="Spacious and comfortable AC Deluxe Room at Raj Resort Kelva" class="rounded-2xl shadow-lg mx-auto w-full max-w-2xl object-cover h-72 md:h-96" />
+        <p class="text-xs text-gray-500 mt-2">Spacious, air-conditioned Deluxe Room with modern amenities and complimentary breakfast</p>
+      </div>
+
+      <h3>3. Authentic Agri-Koli Seafood & Pure Vegetarian Dining</h3>
+      <p>Dining at Raj Resort is a culinary journey through coastal Maharashtra. Being situated close to active fishing harbours, our in-house restaurant serves the freshest seafood imaginable:
+      <ul>
+        <li><strong>Non-Veg Delicacies:</strong> Crispy rava-fried Pomfret (Paplet), tender Surmai fish curry, spicy coastal Prawns masala, Crab Sukka, and traditional Agri-Koli Chicken Handi served with digestive pink <em>Solkadhi</em>.</li>
+        <li><strong>100% Pure Vegetarian & Jain Options:</strong> We maintain strictly separate cooking utensils and designated kitchen zones for our vegetarian guests, preparing creamy Paneer gravies, traditional Pithla-Bhakri, Dal Tadka, hot rotis, and delectable sweet desserts.</li>
+      </ul>
+      </p>
+
+      <h3>4. 50,000 Sq. Ft. Landscaped Garden Lawns</h3>
+      <p>Unlike crowded city hotels, Raj Resort offers vast open-air greenery. Our manicured lawns are perfect for morning meditation, children\'s box cricket, badminton, or simply sipping freshly brewed ginger tea under coconut palms as the evening breeze sets in. Take a look at our lush grounds in the <a href="/gallery">Photo Gallery</a>.</p>
+
+      <h3>5. Free Secure Parking & 24/7 Hospitality</h3>
+      <p>We provide expansive, gated on-site parking with 24-hour CCTV surveillance and security guards, ensuring complete safety for your private cars, SUVs, or group tempo travelers.</p>
+
+      <h2>Tariff & Stay Package Overview (Direct Booking Rates)</h2>
+
+      <div class="blog-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Accommodation Category</th>
+              <th>Base Occupancy</th>
+              <th>Tariff (Per Day)</th>
+              <th>Effective Cost / Person</th>
+              <th>Key Amenities Included</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>AC Economic Room</strong></td>
+              <td>2 Adults</td>
+              <td>₹3,000/-</td>
+              <td><strong>₹1,500</strong></td>
+              <td>Air conditioning, attached bath, free Wi-Fi, pool & breakfast</td>
+            </tr>
+            <tr>
+              <td><strong>AC Standard Room</strong></td>
+              <td>2 Adults</td>
+              <td>₹3,500/-</td>
+              <td><strong>₹1,750</strong></td>
+              <td>Air conditioning, TV with cable, attached bath, pool & breakfast</td>
+            </tr>
+            <tr>
+              <td><strong>AC Deluxe Room</strong></td>
+              <td>2 Adults</td>
+              <td>₹4,200/-</td>
+              <td><strong>₹2,100</strong></td>
+              <td>Mini fridge, premium bedding, cable TV, pool & breakfast</td>
+            </tr>
+            <tr>
+              <td><strong>AC Big Family Room</strong></td>
+              <td>Min. 8 Adults</td>
+              <td>₹10,000/-</td>
+              <td><strong>₹1,250</strong></td>
+              <td>Multiple beds, spacious lounge area, pool & breakfast</td>
+            </tr>
+            <tr>
+              <td><strong>1-Day Picnic Package</strong></td>
+              <td>Per Person</td>
+              <td>₹650 – ₹1,050/-</td>
+              <td><strong>₹650 – ₹1,050</strong></td>
+              <td>Breakfast, unlimited lunch buffet, high tea, pool & rain dance</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="blog-callout">
+        <p><strong>💡 Weekend Travel Tip:</strong> Check-in is at 12:00 PM and check-out is at 10:00 AM. If you arrive early by train at Kelwa Road station, you can drop your luggage safely at our reception, enjoy breakfast in the dining area, and take an invigorating swim in our pool before room check-in!</p>
+      </div>
+
+      <h2>Sample 2-Day Weekend Itinerary at Raj Resort Kelva</h2>
+      <ul>
+        <li><strong>Day 1 (Saturday):</strong> Drive down from Mumbai via NH48 or board a morning Dahanu local train to Kelwa Road station. Arrive at Raj Resort, check into your AC room, dive into the swimming pool, and dance under the rain showers. Feast on an authentic coastal seafood or pure veg lunch. In the late afternoon, take the 2-minute stroll to Kelva Beach to watch the sunset and enjoy camel rides. Return for dinner under the starlit lawns.</li>
+        <li><strong>Day 2 (Sunday):</strong> Wake up to sea breezes, enjoy complimentary hot breakfast (Poha, Misal Pav, tea), and take a morning walk to the historic 800-year-old Sheetla Devi Temple or Kelva Sea Fort. Have a refreshing dip in the pool, check out at 10:00 AM, stop by scenic Kelva Dam, and head back home feeling completely rejuvenated!</li>
+      </ul>
+
+      <h2>Frequently Asked Questions (FAQs)</h2>
+
+      <div class="blog-faq-item">
+        <h4>Which is the best resort near Kelva Beach for a weekend trip?</h4>
+        <p>Raj Resort is widely regarded as the best resort near Kelva Beach, Palghar due to its prime location just 2 minutes from the shoreline, clean swimming pool with rain dance, spotless AC rooms, 50,000 sq ft garden lawns, and authentic Agri-Koli cuisine.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>How far is Raj Resort from Mumbai and Thane?</h4>
+        <p>Raj Resort is located approximately 95 km from Borivali and 105 km from Thane. The drive via the Western Express Highway (NH48) takes roughly 1.5 to 2 hours, or about 75 minutes via direct Western Railway local train to Kelwa Road station.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>Is the swimming pool and rain dance included in the room price?</h4>
+        <p>Yes, all verified room bookings at Raj Resort include full, unlimited access to the swimming pool and scheduled DJ rain dance sessions without any additional charges.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>Does Raj Resort cater to pure vegetarian and Jain guests?</h4>
+        <p>Yes, we take immense pride in catering to pure vegetarian and Jain guests with separate cooking utensils, dedicated kitchen counters, and dishes prepared strictly without onion, garlic, or root vegetables upon request.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>How can I book a room or day picnic at Raj Resort Kelva?</h4>
+        <p>You can reserve directly by calling our reservation desk at <a href="tel:+919890165286">+91 9890165286</a> or sending an inquiry through our <a href="/contact">Contact Page</a> for instant booking confirmation and best seasonal rates.</p>
+      </div>
+
+      <div class="blog-cta-box">
+        <h3>Book Your Coastal Weekend Escape Today!</h3>
+        <p>Experience the ultimate beachside relaxation with clean pool waters, delicious coastal meals, and peaceful pine-fringed shores at Raj Resort Kelva.</p>
+        <a href="tel:+919890165286" class="blog-cta-btn">Call to Reserve: +91 9890165286</a>
+      </div>
+    `,
+        image: '/images/pool.webp',
+        date: 'November 10, 2026',
+        author: 'Raj Resort Team',
+        keywords: 'best resort near kelva beach, resort in palghar, weekend getaway near mumbai, beach resort in kelva, kelva beach stay, resorts near kelva beach walking distance, kelwa road beach resort, raj resort kelva'
+    },
+    {
+        id: 48,
+        title: 'Best Family Resort in Palghar with Swimming Pool and Rain Dance',
+        slug: 'best-family-resort-in-palghar-with-swimming-pool-and-rain-dance',
+        summary: 'Looking for the best family resort in Palghar with a swimming pool and rain dance? Discover Raj Resort Kelva: safe kids pool, family AC suites, 50,000 sq ft lawns, authentic food, and beachside fun.',
+        content: `
+      <p>Planning a family vacation that satisfies everyone—from toddlers and energetic teenagers to working parents and elderly grandparents—is no easy feat. Children want endless water games and fun activities; parents seek relaxation, clean hygienic rooms, and safety; while grandparents look for peaceful surroundings, wholesome home-style food, and minimal walking hassles. Standard city hotels or cramped weekend homestays simply cannot cater to these diverse needs.</p>
+
+      <p>If you are looking for the <a href="/amenities"><strong>best family resort in Palghar with a swimming pool and rain dance</strong></a>, look no further than <strong>Raj Resort at Kelva Beach</strong>. Situated just a 90-minute drive from Mumbai and Thane, Raj Resort is purposefully designed to deliver memorable, safe, and joyful holidays for families of all generations.</p>
+
+      <h2>Why Raj Resort is Palghar\'s #1 Family Holiday Destination</h2>
+
+      <h3>1. Safe, Chlorinated Swimming Pool with Dedicated Kids Shallow End</h3>
+      <p>Water safety is every parent\'s top priority. Our swimming pool is maintained with state-of-the-art filtration systems, providing clean, skin-friendly chlorinated water. Crucially, the pool features a <strong>gradual 3-foot shallow zone</strong> where younger kids and non-swimmers can splash, play with floating balls, and swim safely under parental supervision, while deeper areas allow adults to enjoy a full fitness workout.</p>
+
+      <div class="my-6 text-center">
+        <img src="/images/pool5.webp" alt="Family enjoying swimming pool and rain dance at Raj Resort Palghar" class="rounded-2xl shadow-lg mx-auto w-full max-w-2xl object-cover h-72 md:h-96" />
+        <p class="text-xs text-gray-500 mt-2">Spacious swimming pool with dedicated shallow end and rain dance arena at Raj Resort</p>
+      </div>
+
+      <h3>2. Exhilarating Rain Dance Arena with Family-Friendly Music</h3>
+      <p>The undisputed highlight of any family trip to Raj Resort is our <strong>rain dance arena</strong>. Step under high-pressure overhead shower jets that simulate a refreshing tropical downpour while uplifting music plays. It is a joyful, screen-free activity where kids, parents, and even grandparents let go of daily stress, dance together, and create memories that last a lifetime.</p>
+
+      <h3>3. Spacious Family Accommodations: Stay Together in Comfort</h3>
+      <p>Family trips are about togetherness. Rather than splitting your family across disconnected hotel rooms on different floors, Raj Resort provides tailored family suites that keep everyone together:
+      <ul>
+        <li><strong>AC Big Family Room (₹10,000/day for 8+ persons):</strong> Our flagship family accommodation features multiple comfortable double beds, spacious lounging areas, attached sanitized modern bathrooms, and cable television. It comfortably accommodates 8 to 10 family members, bringing the effective stay cost to just <strong>₹1,250 per person</strong> including complimentary breakfast!</li>
+        <li><strong>Interconnected AC Deluxe Rooms (₹4,200/day):</strong> Ideal for families with elderly parents who desire extra privacy while remaining right next door. Each room comes equipped with air conditioning, mini fridge, and premium bedding.</li>
+      </ul>
+      Check out room layouts on our <a href="/rooms">Rooms Page</a>.</p>
+
+      <div class="my-6 text-center">
+        <img src="/images/rooms/family-room.webp" alt="Spacious Big Family Room accommodating 8 to 10 guests at Raj Resort Kelva" class="rounded-2xl shadow-lg mx-auto w-full max-w-2xl object-cover h-72 md:h-96" />
+        <p class="text-xs text-gray-500 mt-2">Spacious AC Big Family Room with multiple beds and lounge space for large family gatherings</p>
+      </div>
+
+      <h3>4. 50,000 Sq. Ft. of Safe, Gated Outdoor Garden Lawns</h3>
+      <p>Kids need open space to run free. At Raj Resort, your children don\'t have to stay glued to smartphone screens. Our sprawling <strong>50,000 sq ft manicured green lawns</strong> offer safe, vehicle-free grounds for box cricket, frisbee, badminton, and running races. Parents can relax in shaded garden gazebos with a cup of hot masala tea while keeping a watchful eye on their little ones.</p>
+
+      <div class="my-6 text-center">
+        <img src="/images/lawnn.webp" alt="Sprawling 50,000 sq ft green lawns and gardens at Raj Resort Palghar" class="rounded-2xl shadow-lg mx-auto w-full max-w-2xl object-cover h-72 md:h-96" />
+        <p class="text-xs text-gray-500 mt-2">50,000 sq. ft. of manicured green lawns perfect for family sports and outdoor games</p>
+      </div>
+
+      <h3>5. Wholesome Dining for Every Generation (Pure Veg, Jain & Fresh Seafood)</h3>
+      <p>Food preferences vary greatly within Indian families. Grandparents may prefer satvik pure vegetarian or Jain food, while younger family members crave fresh coastal seafood or chicken dishes. Our kitchen caters to all with zero compromise:
+      <ul>
+        <li><strong>Dedicated Pure Veg & Jain Kitchen:</strong> Fresh Paneer Butter Masala, traditional Pithla-Bhakri, seasonal vegetables, Dal Tadka, and hot chapatis cooked in separate cookware without onion or garlic upon request.</li>
+        <li><strong>Authentic Konkani Seafood & Chicken:</strong> Fresh Pomfret fry, Surmai curry, Prawns masala, and Chicken Handi made with locally sourced coastal spices and soothing Solkadhi.</li>
+        <li><strong>Kid-Friendly Meals:</strong> Mild pasta, crispy French fries, sandwiches, and hot milk are readily prepared for toddlers upon request.</li>
+      </ul>
+      </p>
+
+      <h2>Family Vacation Features & Facility Comparison</h2>
+
+      <div class="blog-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Resort Facility</th>
+              <th>How Raj Resort Caters to Families</th>
+              <th>Benefit for Your Family</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Swimming Pool</strong></td>
+              <td>Gradual 3-foot shallow kids end + deeper adult zone</td>
+              <td>Safe for children; relaxing for adults</td>
+            </tr>
+            <tr>
+              <td><strong>Rain Dance Arena</strong></td>
+              <td>Overhead mist showers with lively sound system</td>
+              <td>High-energy group fun for all ages</td>
+            </tr>
+            <tr>
+              <td><strong>AC Family Suite</strong></td>
+              <td>Multiple beds accommodating 8+ guests comfortably</td>
+              <td>Keeps the whole family together at ₹1,250/person</td>
+            </tr>
+            <tr>
+              <td><strong>50,000 Sq. Ft. Lawns</strong></td>
+              <td>Gated, vehicle-free manicured grass grounds</td>
+              <td>Safe outdoor sports, cricket, badminton & leisure</td>
+            </tr>
+            <tr>
+              <td><strong>Proximity to Beach</strong></td>
+              <td>Just 2-minute shaded walk (under 200m) to Kelva Beach</td>
+              <td>No traffic, no parking hassles; easy beach trips</td>
+            </tr>
+            <tr>
+              <td><strong>Dining Setup</strong></td>
+              <td>Separate veg/Jain cooking & fresh coastal seafood</td>
+              <td>Satisfies diverse dietary needs under one roof</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="blog-callout">
+        <p><strong>👨‍👩‍👧‍👦 Family Day Picnic Option:</strong> Short on time? Raj Resort offers all-inclusive <strong>1-Day Family Picnic Packages</strong> starting from ₹650 per head, including morning breakfast (Poha/Misal Pav), unlimited lunch buffet, evening high tea with hot pakoras, full swimming pool access, and DJ rain dance!</p>
+      </div>
+
+      <h2>Fun Family Sightseeing Near Raj Resort</h2>
+      <ol>
+        <li><strong>Kelva Beach Camel & Buggy Rides:</strong> Treat the kids to a traditional beach camel ride along the calm shoreline, just 2 minutes from the resort.</li>
+        <li><strong>Kelva Sea Fort (Pankot):</strong> An exciting historical Portuguese sea fort accessible on foot during low tide.</li>
+        <li><strong>Sheetla Devi Temple:</strong> A revered ancient coastal shrine surrounded by sacred ponds, perfect for senior family members.</li>
+        <li><strong>Kelva Dam & Lake:</strong> A serene freshwater picnic reservoir 10 km away, surrounded by green hills. Learn more in our <a href="/location">Location & Travel Guide</a>.</li>
+      </ol>
+
+      <h2>Frequently Asked Questions (FAQs)</h2>
+
+      <div class="blog-faq-item">
+        <h4>Is the swimming pool safe for young children at Raj Resort?</h4>
+        <p>Yes. Our swimming pool features a clearly demarcated 3-foot shallow end designed specifically for toddlers and non-swimmers, with clean, chlorinated water maintained daily.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>Can Raj Resort accommodate large joint families of 10 to 15 people?</h4>
+        <p>Yes, our AC Big Family Rooms offer generous space and multiple beds designed for 8 to 10 guests. For larger groups, adjacent Deluxe rooms can be booked together to keep the whole family close.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>Do you provide baby food or mild meals for small kids?</h4>
+        <p>Yes. Our in-house kitchen team is delighted to prepare khichdi, mild dal rice, fresh milk, and customized non-spicy meals for toddlers and young children upon request.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>How close is the beach for elderly family members who cannot walk far?</h4>
+        <p>Kelva Beach is only a 2-minute flat, level walk (under 200 meters) through shaded village pathways directly behind the resort, making it very easy for grandparents and small children to reach.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>Are there games and activities for children on the resort premises?</h4>
+        <p>Yes, children can enjoy our swimming pool, rain dance arena, and expansive 50,000 sq ft lawns where they can play cricket, badminton, and tag in a completely secure, gated environment.</p>
+      </div>
+
+      <div class="blog-cta-box">
+        <h3>Plan Your Next Family Getaway at Raj Resort!</h3>
+        <p>Give your loved ones the gift of poolside laughter, rain dance beats, and authentic coastal feasts at Palghar\'s favorite family resort.</p>
+        <a href="tel:+919890165286" class="blog-cta-btn">Book Family Stay: +91 9890165286</a>
+      </div>
+    `,
+        image: '/images/pool5.webp',
+        date: 'November 12, 2026',
+        author: 'Raj Resort Team',
+        keywords: 'family resort in palghar with swimming pool, best resort in kelva for family, resort in palghar with rain dance, swimming pool resort in kelva beach, family holiday resort near mumbai, kelva beach resort with kids pool, rain dance resort kelva'
+    },
+    {
+        id: 49,
+        title: 'Top Places to Visit in Kelva Beach, Palghar – Complete Travel Guide',
+        slug: 'top-places-to-visit-in-kelva-beach-palghar-travel-guide',
+        summary: 'Planning a trip to Kelva Beach, Palghar? Explore top sightseeing spots: Kelva Sea Fort, Sheetla Devi Temple, Kelva Dam, pinewoods, and water sports with stay tips at Raj Resort.',
+        content: `
+      <p>Situated just 95 kilometers north of Mumbai in the coastal belt of Palghar district, <strong>Kelva Beach</strong> (also spelled <em>Kelve Beach</em>) is one of Maharashtra\'s most captivating, yet delightfully uncrowded coastal destinations. Unlike highly commercialized beaches that have lost their natural serenity, Kelva is famed for its sweeping 8-kilometer coastline of firm black sand, aromatic <em>Suru</em> (Casuarina) pine forests, and rich 16th-century Portuguese and Maratha history.</p>
+
+      <p>Whether you are planning a one-day picnic or a relaxing weekend getaway, Kelva has plenty of cultural and natural treasures to explore. In this complete 2026 travel guide, we cover the <strong>top places to visit in Kelva Beach, Palghar</strong>, travel tips, and where to stay for the ultimate coastal holiday.</p>
+
+      <h2>Top 6 Attractions to Visit in and Around Kelva Beach</h2>
+
+      <h3>1. Kelva Sea Fort (Pankot) – The Ocean Citadel</h3>
+      <p>Located directly off the Kelva shoreline, the <strong>Kelva Sea Fort</strong> (locally known as <em>Pankot</em>) is an architectural wonder constructed by the Portuguese in the early 16th century and later captured by the Maratha warrior Peshwa Chimaji Appa in 1739. The fort\'s unique feature is its tidal accessibility:
+      <ul>
+        <li><strong>Low Tide Magic:</strong> During low tide, the sea recedes hundreds of meters, allowing visitors to walk right up to the fort\'s stone ramparts across the sandy seabed.</li>
+        <li><strong>High Tide Spectacle:</strong> During high tide, the fortress becomes completely encircled by the swirling waters of the Arabian Sea, creating a majestic photo opportunity from the beach.</li>
+      </ul>
+      Explore its ancient bastions, watchtowers, and panoramic views of the open ocean.</p>
+
+      <div class="my-6 text-center">
+        <img src="/images/kelva-sea-fort.jpg" alt="Historic Kelva Sea Fort Pankot surrounded by Arabian sea water in Palghar" class="rounded-2xl shadow-lg mx-auto w-full max-w-2xl object-cover h-72 md:h-96" />
+        <p class="text-xs text-gray-500 mt-2">Historic Kelva Sea Fort (Pankot) accessible on foot during low tide</p>
+      </div>
+
+      <h3>2. Kelva Beach Shoreline & Suru Pine Forest</h3>
+      <p>Stretching nearly 8 continuous kilometers, Kelva Beach is one of the longest beaches in Maharashtra. The highlight is the dense belt of Casuarina (Suru) pine trees lining the high-tide line, which provides natural shade, a cool breeze, and a peaceful ambiance. Here, you can:
+      <ul>
+        <li>Enjoy thrilling water sports including jet skiing, banana boat rides, and bumper tubes.</li>
+        <li>Take a traditional camel ride or horse-drawn buggy ride along the shoreline at sunset.</li>
+        <li>Relish local beach snacks like freshly roasted corn on the cob (bhutta), tender coconut water, and spicy vada pav.</li>
+      </ul>
+      </p>
+
+      <div class="my-6 text-center">
+        <img src="/images/beach-view1.webp" alt="Scenic view of Kelva Beach coastline with Casuarina pine trees in Palghar" class="rounded-2xl shadow-lg mx-auto w-full max-w-2xl object-cover h-72 md:h-96" />
+        <p class="text-xs text-gray-500 mt-2">Expansive 8 km coastline of Kelva Beach bordered by scenic Suru pine trees</p>
+      </div>
+
+      <h3>3. Historic Sheetla Devi Temple</h3>
+      <p>Nestled just a short walk from the southern end of the beach, the <strong>Sheetla Devi Temple</strong> is an 800-year-old spiritual landmark revered by local Agri and Koli fishing communities. Dedicated to Goddess Sheetla Devi, the temple complex features tranquil historical architecture, a sacred freshwater lake, and shaded gardens. It offers a deeply peaceful spiritual experience before you head out to the sands.</p>
+
+      <div class="my-6 text-center">
+        <img src="/images/shitladevi-temple.jpg" alt="Ancient Sheetla Devi Temple complex near Kelva Beach Palghar" class="rounded-2xl shadow-lg mx-auto w-full max-w-2xl object-cover h-72 md:h-96" />
+        <p class="text-xs text-gray-500 mt-2">The revered 800-year-old Sheetla Devi Temple complex beside Kelva Beach</p>
+      </div>
+
+      <h3>4. Kelva Dam & Reservoir (10 mins from the Beach)</h3>
+      <p>Situated roughly 10 kilometers inland from the coast, <strong>Kelva Dam</strong> is a picturesque freshwater reservoir bordered by rolling green Sahyadri hillocks and lush countryside. Built across a local river, it is a serene spot for morning bird-watching, photography, and enjoying cool freshwater breezes away from commercial crowds.</p>
+
+      <div class="my-6 text-center">
+        <img src="/images/kelvadam.webp" alt="Peaceful Kelva Dam freshwater reservoir surrounded by nature in Palghar" class="rounded-2xl shadow-lg mx-auto w-full max-w-2xl object-cover h-72 md:h-96" />
+        <p class="text-xs text-gray-500 mt-2">Kelva Dam & freshwater reservoir, a peaceful ecotourism spot near Kelva Beach</p>
+      </div>
+
+      <h3>5. Shirgaon Fort & Coastal Watchtowers (14 km away)</h3>
+      <p>For history buffs, a short drive north toward Palghar brings you to <strong>Shirgaon Fort</strong>. Renovated by Chhatrapati Shivaji Maharaj in the 17th century, this well-preserved stone fortress features intact cannons, high parapet walls, and strategic vantage points over the surrounding fishing creeks.</p>
+
+      <h3>6. Local Palghar Agro-Tourism & Chikoo Orchards</h3>
+      <p>Palghar district is world-renowned for its GI-tagged <strong>Dahanu-Gholvad Chikoo (Sapota)</strong> and Wada Kolam rice plantations. On your way back from Kelva, stop by local agro-tourism farms to pick fresh Chikoos, purchase pure wild honey, and sample authentic sun-dried spices and organic jaggery directly from local farmers.</p>
+
+      <h2>Kelva Sightseeing Distance & Travel Guide Matrix</h2>
+
+      <div class="blog-table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Attraction Name</th>
+              <th>Distance from Raj Resort</th>
+              <th>Estimated Travel Time</th>
+              <th>Best Time to Visit</th>
+              <th>Key Highlights</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Kelva Beach Shoreline</strong></td>
+              <td><strong>200 meters (2 mins walk)</strong></td>
+              <td>2 minutes</td>
+              <td>Sunrise & Sunset</td>
+              <td>Water sports, camel rides & soft black sand</td>
+            </tr>
+            <tr>
+              <td><strong>Kelva Sea Fort (Pankot)</strong></td>
+              <td>1.2 km</td>
+              <td>5 mins walk / drive</td>
+              <td>Low tide hours</td>
+              <td>Walk out to the Portuguese fort surrounded by sea</td>
+            </tr>
+            <tr>
+              <td><strong>Sheetla Devi Temple</strong></td>
+              <td>1.5 km</td>
+              <td>5 minutes</td>
+              <td>Morning / Aarti time</td>
+              <td>Ancient temple, sacred lake & spiritual peace</td>
+            </tr>
+            <tr>
+              <td><strong>Kelva Dam & Lake</strong></td>
+              <td>10 km</td>
+              <td>15 minutes</td>
+              <td>Morning / Post-monsoon</td>
+              <td>Freshwater reservoir, nature trails & bird watching</td>
+            </tr>
+            <tr>
+              <td><strong>Shirgaon Fort</strong></td>
+              <td>14 km</td>
+              <td>20 minutes</td>
+              <td>Late afternoon</td>
+              <td>Historic Maratha stone fort with ocean view</td>
+            </tr>
+            <tr>
+              <td><strong>Palghar Chikoo Orchards</strong></td>
+              <td>12 km</td>
+              <td>18 minutes</td>
+              <td>October to April</td>
+              <td>Agro-tourism, fresh fruit picking & local spices</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="blog-callout">
+        <p><strong>🗺️ Sightseeing Tip:</strong> Start your day early! Visit Kelva Fort and Sheetla Devi Temple in the cool morning hours, head back to <a href="/rooms">Raj Resort</a> for a refreshing swim and authentic coastal seafood lunch, and return to the beach by 4:30 PM for sunset water sports and camel rides.</p>
+      </div>
+
+      <h2>Where to Stay: Why Raj Resort is the Perfect Sightseeing Basecamp</h2>
+      <p>After an active day exploring coastal forts and sun-drenched beaches, returning to basic rustic lodges with unhygienic washrooms or cramped rooms can ruin your holiday. <strong>Raj Resort</strong> provides the ideal sanctuary to recharge in style:
+      <ul>
+        <li><strong>Unmatched Proximity:</strong> Just a 2-minute walk from Kelva Beach and minutes from Kelva Fort and Sheetla Devi Temple.</li>
+        <li><strong>Swimming Pool & DJ Rain Dance:</strong> Wash off the beach sand with a refreshing dip in our crystal-clear pool. Check out our facilities on the <a href="/amenities">Amenities Page</a>.</li>
+        <li><strong>Deluxe AC Rooms & Family Suites:</strong> Air-conditioned rooms starting at ₹3,000 for couples and ₹10,000 for large families of 8+, all including complimentary breakfast.</li>
+        <li><strong>Authentic Konkani Cuisine:</strong> Feast on freshly fried Pomfret (Paplet), Surmai curry, Prawns masala, or wholesome pure veg and Jain thalis.</li>
+        <li><strong>Free Gated Parking:</strong> Safe parking for family cars, SUVs, and tourist buses with 24/7 security.</li>
+      </ul>
+      </p>
+
+      <h2>Frequently Asked Questions (FAQs)</h2>
+
+      <div class="blog-faq-item">
+        <h4>What are the top places to visit in Kelva Beach, Palghar?</h4>
+        <p>The top attractions are the Kelva Sea Fort (Pankot) accessible during low tide, the 8-km pine-fringed Kelva Beach shoreline, the 800-year-old Sheetla Devi Temple, scenic Kelva Dam, and nearby Shirgaon Fort.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>Can we walk to Kelva Sea Fort during high tide?</h4>
+        <p>No. During high tide, the fort is completely surrounded by deep seawater. It is only safe to walk across the sand to the fort during low tide. Always check daily tide timings before walking out.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>How many days are needed to explore Kelva Beach and Palghar?</h4>
+        <p>A 2-day, 1-night weekend trip is ideal to explore all major sightseeing spots, enjoy water sports, relax in Raj Resort\'s swimming pool, and savor authentic coastal meals without rushing.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>Are water sports available at Kelva Beach?</h4>
+        <p>Yes, water sports such as jet skiing, banana boat rides, and bumper rides operate at Kelva Beach during non-monsoon months (October to May), along with camel and horse-cart rides.</p>
+      </div>
+
+      <div class="blog-faq-item">
+        <h4>How do I reach Kelva Beach from Mumbai and Thane?</h4>
+        <p>You can drive via NH48 in roughly 1.5 to 2 hours, or board a Western Railway Dahanu EMU local train to Kelwa Road station (approx. 75 minutes from Borivali) and take a 10-minute auto-rickshaw to Raj Resort. See our <a href="/location">Location Page</a> for step-by-step directions.</p>
+      </div>
+
+      <div class="blog-cta-box">
+        <h3>Plan Your Kelva Sightseeing Getaway at Raj Resort!</h3>
+        <p>Explore Kelva\'s historic forts and beaches, then unwind by our sparkling swimming pool with authentic coastal dining.</p>
+        <a href="tel:+919890165286" class="blog-cta-btn">Book Sightseeing Stay: +91 9890165286</a>
+      </div>
+    `,
+        image: '/images/kelva-sea-fort.jpg',
+        date: 'November 15, 2026',
+        author: 'Travel & Tourism Desk',
+        keywords: 'places to visit in kelva beach palghar, kelva beach sightseeing, kelva fort palghar, sheetla devi temple kelva, tourist places near kelva beach, kelva dam palghar, kelva beach travel guide, things to do in kelva beach'
     }
 ];
