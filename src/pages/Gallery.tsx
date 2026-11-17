@@ -67,6 +67,17 @@ export default function Gallery() {
     }
   };
 
+  useEffect(() => {
+    if (lightboxIndex === null) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowRight') setLightboxIndex((prev) => (prev !== null ? (prev + 1) % filteredImages.length : null));
+      if (e.key === 'ArrowLeft') setLightboxIndex((prev) => (prev !== null ? (prev - 1 + filteredImages.length) % filteredImages.length : null));
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [lightboxIndex, filteredImages.length]);
+
   const gallerySchema = {
     "@context": "https://schema.org",
     "@graph": [

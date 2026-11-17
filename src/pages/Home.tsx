@@ -135,29 +135,30 @@ export default function Home() {
       />
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
-        {/* Background Image Slider */}
-        <div className="absolute inset-0 z-0 bg-charcoal">
-          <picture>
-            <source
-              media="(max-width: 767px)"
-              srcSet={heroImages[currentImageIndex].mobileSrc}
-            />
-            <source
-              media="(min-width: 768px)"
-              srcSet={heroImages[currentImageIndex].src}
-            />
-            <img
-              src={heroImages[currentImageIndex].src}
-              alt={heroImages[currentImageIndex].alt}
-              className="absolute inset-0 w-full h-full object-cover"
-              fetchPriority="high"
-              loading="eager"
-              decoding="sync"
-              width={1440}
-              height={1080}
-            />
-          </picture>
-          <div className="absolute inset-0 bg-charcoal/50"></div>
+        {/* Background Image Slider with Smooth Crossfade */}
+        <div className="absolute inset-0 z-0 bg-charcoal overflow-hidden">
+          {heroImages.map((image, idx) => (
+            <picture
+              key={image.src}
+              className={`absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out ${
+                idx === currentImageIndex ? 'opacity-100 z-0' : 'opacity-0 pointer-events-none -z-10'
+              }`}
+            >
+              <source media="(max-width: 767px)" srcSet={image.mobileSrc} />
+              <source media="(min-width: 768px)" srcSet={image.src} />
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="w-full h-full object-cover"
+                fetchPriority={idx === 0 ? 'high' : 'low'}
+                loading={idx === 0 ? 'eager' : 'lazy'}
+                decoding="async"
+                width={1440}
+                height={1080}
+              />
+            </picture>
+          ))}
+          <div className="absolute inset-0 bg-charcoal/50 z-1"></div>
         </div>
 
         {/* Content */}

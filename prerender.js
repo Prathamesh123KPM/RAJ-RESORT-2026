@@ -16,6 +16,7 @@ const routes = [
     '/location',
     '/contact',
     '/blog',
+    '/privacy',
     ...blogPosts.map(post => `/blog/${post.slug}`)
 ];
 

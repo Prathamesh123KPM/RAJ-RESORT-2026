@@ -3422,7 +3422,7 @@ export const blogPosts: BlogPostData[] = [
         <li><strong>Carry Proper Swimwear:</strong> Synthetic or nylon swimwear is required for swimming pool entry. Don\'t forget towels and an extra pair of dry clothes.</li>
         <li><strong>Reach by 09:30 AM:</strong> Starting early allows you to enjoy the pool during the coolest hours before noon and take full advantage of the breakfast window.</li>
         <li><strong>Pre-Book for Weekends:</strong> Saturday and Sunday day-picnic slots fill up quickly due to resort capacity limits. Advance reservation is strongly recommended.</li>
-        <li><strong>Club with Sightseeing:</strong> Take 30 minutes in the late afternoon to visit the historic <a href="/blog/the-ultimate-palghar-coastal-heritage-circuit">Kelva Fort</a> or Sheetla Devi Temple located right next to the beach.</li>
+        <li><strong>Club with Sightseeing:</strong> Take 30 minutes in the late afternoon to visit the historic <a href="/blog/palghar-heritage-and-beach-circuit-kelva-shirgaon-mahim-resort-stay">Kelva Fort</a> or Sheetla Devi Temple located right next to the beach.</li>
         <li><strong>Consider an AC Rest Room:</strong> If traveling with infants or senior grandparents, add an AC room for daytime resting and peaceful afternoon naps.</li>
       </ol>
 
@@ -3590,7 +3590,7 @@ export const blogPosts: BlogPostData[] = [
       <h2>5. Sightseeing & Cultural Heritage</h2>
       <p>Beyond the sand, what else can you discover?
       <ul>
-        <li><strong>Kelva Beach Attractions:</strong> Visit the famous <a href="/blog/the-ultimate-palghar-coastal-heritage-circuit">Kelva Sea Fort (Pankot)</a> which gets surrounded by water during high tide, explore the 800-year-old historic Sheetla Devi Temple, visit scenic Kelva Dam, or take a quick day trip to Shirgaon and Mahim Forts.</li>
+        <li><strong>Kelva Beach Attractions:</strong> Visit the famous <a href="/blog/palghar-heritage-and-beach-circuit-kelva-shirgaon-mahim-resort-stay">Kelva Sea Fort (Pankot)</a> which gets surrounded by water during high tide, explore the 800-year-old historic Sheetla Devi Temple, visit scenic Kelva Dam, or take a quick day trip to Shirgaon and Mahim Forts.</li>
         <li><strong>Alibaug:</strong> Kolaba Fort is fascinating during low tide, though access is frequently congested with hundreds of tourists.</li>
       </ul>
       </p>
@@ -3727,7 +3727,7 @@ export const blogPosts: BlogPostData[] = [
       </div>
 
       <div class="blog-callout">
-        <p><strong>🌊 Insider Tide Advice:</strong> High tide at Kelva Beach creates magnificent sea views, while low tide exposes hundreds of meters of firm, walkable sand perfect for buggy rides, camel rides, and walking up to historic <a href="/blog/the-ultimate-palghar-coastal-heritage-circuit">Kelva Fort (Pankot)</a>. Staying at Raj Resort allows you to time your beach visits perfectly around the tides!</p>
+        <p><strong>🌊 Insider Tide Advice:</strong> High tide at Kelva Beach creates magnificent sea views, while low tide exposes hundreds of meters of firm, walkable sand perfect for buggy rides, camel rides, and walking up to historic <a href="/blog/palghar-heritage-and-beach-circuit-kelva-shirgaon-mahim-resort-stay">Kelva Fort (Pankot)</a>. Staying at Raj Resort allows you to time your beach visits perfectly around the tides!</p>
       </div>
 
       <h2>Top Things to Do Within 5 Minutes of Raj Resort</h2>

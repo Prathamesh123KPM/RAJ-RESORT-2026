@@ -22,7 +22,19 @@ export default function BlogPost() {
         window.scrollTo(0, 0);
     }, [post]);
 
-    if (!post) return null;
+    if (!post) {
+        return (
+            <div className="pt-32 pb-20 bg-gray-50 min-h-screen">
+                <div className="max-w-xl mx-auto px-4 text-center">
+                    <h1 className="text-3xl font-serif font-bold text-charcoal mb-4">Article Not Found</h1>
+                    <p className="text-gray-500 mb-8">The travel article you are looking for may have been moved or updated.</p>
+                    <Link to="/blog" className="inline-flex items-center gap-2 px-6 py-3 bg-ocean text-white rounded-lg font-medium hover:bg-ocean/90 transition-colors shadow-md">
+                        <ChevronLeft size={18} /> Back to All Articles
+                    </Link>
+                </div>
+            </div>
+        );
+    }
 
     const safeISODate = (dateStr: string) => {
         try {

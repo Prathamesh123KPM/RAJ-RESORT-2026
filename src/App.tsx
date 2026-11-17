@@ -15,6 +15,8 @@ const Location = lazy(() => import('./pages/Location'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Blog = lazy(() => import('./pages/Blog'));
 const BlogPost = lazy(() => import('./pages/BlogPost'));
+const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 
 function CanonicalUpdater() {
   const location = useLocation();
@@ -66,6 +68,8 @@ export default function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="blog" element={<Blog />} />
             <Route path="blog/:slug" element={<BlogPost />} />
+            <Route path="privacy" element={<PrivacyPolicy />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </Suspense>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
-import { Phone, Mail, MapPin, Send } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, MessageCircle } from 'lucide-react';
 import SEO from '../components/SEO';
 
 export default function Contact() {
@@ -311,8 +311,31 @@ export default function Contact() {
                     </>
                   )}
                 </button>
-                <p className="text-center text-sm text-gray-500 mt-4">
-                  * We will call you to confirm availability and pricing.
+
+                <div className="relative flex py-2 items-center">
+                  <div className="flex-grow border-t border-gray-200"></div>
+                  <span className="shrink-0 mx-3 text-xs uppercase tracking-wider text-gray-400 font-semibold">Or Instant Booking</span>
+                  <div className="flex-grow border-t border-gray-200"></div>
+                </div>
+
+                <a
+                  href={`https://wa.me/919890165286?text=${encodeURIComponent(
+                    `Hello Raj Resort, I would like to inquire about booking.${
+                      formData.name ? ` My name is ${formData.name}.` : ''
+                    }${formData.checkIn ? ` Check-in: ${formData.checkIn}.` : ''}${
+                      formData.checkOut ? ` Check-out: ${formData.checkOut}.` : ''
+                    }`
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full py-3.5 bg-[#25D366] hover:bg-[#20ba59] text-white font-bold rounded-lg transition-all shadow-sm flex items-center justify-center gap-2"
+                >
+                  <MessageCircle size={20} />
+                  <span>Chat on WhatsApp Directly</span>
+                </a>
+
+                <p className="text-center text-sm text-gray-500 mt-3">
+                  * We usually respond within 15 minutes on WhatsApp and phone.
                 </p>
               </form>
             </div>

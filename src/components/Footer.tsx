@@ -90,8 +90,8 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} Raj Resort Kelva Beach. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-gray-400">
-            <Link to="#" className="hover:text-sandy transition-colors">Privacy Policy</Link>
-            <Link to="#" className="hover:text-sandy transition-colors">Terms of Service</Link>
+            <Link to="/privacy" className="hover:text-sandy transition-colors">Privacy Policy &amp; Terms</Link>
+            <Link to="/contact" className="hover:text-sandy transition-colors">Help &amp; Inquiries</Link>
           </div>
         </div>
       </div>
